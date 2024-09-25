@@ -327,6 +327,119 @@ header {
   background-color: #5A8A3B;
 }
 
+/* Contribute Page Styles */
+.contribute-page {
+  background-color: #f0f8f0;
+}
+
+.contribute-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contribute-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contribute-intro h1 {
+  color: #2b4b2f;
+  font-size: 40px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.contribute-intro p {
+  color: #4a4a4a;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contribute-form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 40px;
+}
+
+.contribute-form-container h2 {
+  color: #2b4b2f;
+  font-size: 29px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contribute-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #4a4a4a;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group textarea {
+  color: #000000;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group input[type="file"] {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #3B5E3A;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #5A8A3B;
+}
+
 /* Elemtents for Dividers */
 
 .divider{
@@ -1215,6 +1328,97 @@ th{
   padding: 8px;
 }
 
+/* Tools start */
+.tool_stages_figure img{
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+}
+
+.tool_stages_figure figcaption{
+  color: #4A3C31;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 15%;
+}
+
+.tools_img{
+  margin-left: 15%;
+  width: 350px;
+  height: 350px;
+}
+
+.tools_cap{
+  color: black;
+  text-align: center;
+  margin-left: 50px;
+}
+
+/* Tools end */
+
+/* Tutorial start */
+
+.flip_row_2{
+  background-color: transparent;
+  width: 350px;
+  height: 400px;
+  padding-top: 20px;
+  margin-right: 50px;
+}
+
+/* This container is needed to position the front and back side */
+.flip_row_2_inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip_row_2:hover .flip_row_2_inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip_row_2_front, .flip_row_2_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip_row_2_front{
+  background-color: #bbb;
+  color: black;
+  border-radius: 15px 50px;
+}
+
+/* Style the back side */
+.flip_row_2_back {
+  background-color: #3B5E3A;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 15px 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.flip_row_2_front img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 50px;
+}
+
+.flip_row_2_back h3{
+  padding: 10px;
+}
+
+/* Tutorial end */
+
 /* Profile page end */
 
 footer ul {
@@ -1519,4 +1723,24 @@ footer ul {
     top: 10px;
   }
 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-row {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .contribute-form-container {
+      padding: 20px;
+  }
+
+  .contribute-intro h1 {
+      font-size: 2rem;
+  }
+
+  .contribute-intro p {
+      font-size: 1rem;
+  }
 }
