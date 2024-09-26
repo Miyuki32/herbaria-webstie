@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #333;
 }
 
 body {
@@ -33,15 +33,16 @@ h1, h2, h3 {
   font-family: 'Merriweather', serif; /* Secondary serif font for headings */
   line-height: 1.4;
   letter-spacing: 0.5px;
+  color: #ffffff;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 3rem); /* Responsive heading size */
+  font-size: 2.6rem; /* Responsive heading size */
   font-weight: bold;
 }
 
 h2 {
-  font-size: 2.3rem;
+  font-size: 2.0rem;
   font-weight: 600;
 }
 
@@ -448,7 +449,6 @@ header {
   height: 80px;
   padding-top: 5px;
   font-family: Poppins;
-  font-size: 18px;
 }
 
 .class_divider{
@@ -457,7 +457,6 @@ header {
   height: 80px;
   padding-top: 5px;
   font-family: Poppins;
-  font-size: 18px;
 }
 
 .class_border {
@@ -504,6 +503,7 @@ header {
   font-size: 1.5rem;
   margin-bottom: 20px;
   font-style: italic;
+  color: #ffffff;
 }
 
 .product-categories {
@@ -751,142 +751,6 @@ header {
   gap: 20px;
 }
 
-body {
-font-family: 'Poppins', sans-serif;
-line-height: 1.6;
-font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
-color: #333;
-}
-
-/* Header Styles */
-header {
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-h1, h2, h3 {
-font-family: 'Merriweather', serif; /* Secondary serif font for headings */
-line-height: 1.4;
-letter-spacing: 0.5px;
-}
-
-h1 {
-font-size: clamp(2.5rem, 5vw, 3rem); /* Responsive heading size */
-font-weight: bold;
-}
-
-h2 {
-font-size: 2rem;
-font-weight: 600;
-}
-
-h3 {
-font-size: 1.5rem;
-font-weight: medium;
-}
-
-
-.button, .cat_button, input[type="text"] {
-font-family: 'Poppins', sans-serif;
-letter-spacing: 1px;
-font-size: 1rem;
-}
-
-.logo img {
-  height: 40px;
-}
-
-/* Hide the checkbox input */
-#menu-toggle {
-  display: none;
-}
-
-/* Menu Icon */
-.menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-  display: block;
-  font-family: Poppins;
-  z-index: 20; /* Ensure it is above other elements */
-}
-
-/* Navbar Styles */
-header {
-background-color: #3B5E3A;
-padding: 10px 20px;
-position: fixed;
-width: 100%;
-top: 0;
-z-index: 10;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-/* Logo Styles */
-.logo img {
-height: 40px;
-}
-
-/* Hide the menu toggle checkbox */
-.menu-toggle {
-display: none;
-}
-
-/* Menu Icon */
-.menu-icon {
-font-size: 24px;
-cursor: pointer;
-color: white;
-display: none; /* Hide on larger screens */
-}
-
-/* Navbar Styles */
-.navbar {
-display: flex;
-align-items: center;
-gap: 20px;
-}
-
-.navbar ul {
-list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
-gap: 20px;
-}
-
-.navbar ul li {
-margin: 0;
-}
-
-.navbar ul li a {
-color: #fff;
-text-decoration: none;
-font-weight: bold;
-}
-
-/* Search Input */
-.navbar input[type="text"] {
-color: black;
-padding: 6px;
-border: 1px solid #ccc;
-border-radius: 4px;
-font-size: 17px;
-}
-
-/* Show the menu when the checkbox is checked */
-.menu-toggle:checked + .menu-icon + .navbar {
-display: block;
-}
-
 .profile_container{
 margin-left: auto;
 margin-right: auto;
@@ -949,8 +813,8 @@ padding-bottom: 50px;
   width: 75%;
 }
 
-#genus{
-  width: 75%;
+#Genus{
+  width: 78%;
 }
 
 .def_image_genus figcaption{
@@ -1005,6 +869,11 @@ padding-bottom: 50px;
 /* Show the menu when the checkbox is checked */
 #menu-toggle:checked + .menu-icon + .navbar {
   display: block;
+}
+
+.class_textarea ol{
+  padding-left: 20px;
+  list-style-type: lower-roman;
 }
 
 /* Background */
@@ -1415,6 +1284,28 @@ th{
 
 .flip_row_2_back h3{
   padding: 10px;
+}
+
+.def_image_leaf figcaption{
+  color: #4A3C31;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.def_image_tools {
+  padding-left: 30px;
+}
+
+.def_image_tools figcaption{
+  color: #4A3C31;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.def_image_leaf {
+  padding-left: 30px;
 }
 
 /* Tutorial end */
