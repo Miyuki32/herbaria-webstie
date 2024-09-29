@@ -6,15 +6,15 @@
     color: #333;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
     color: #333;
-    background-image: url('images/bg.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
 }
 
 /* Header Styles */
@@ -478,6 +478,17 @@ header {
 }
 
 /* Hero Section */
+
+.parallax {
+    /* Background image for the parallax effect */
+    height: 100vh; /* Full viewport height */
+    background-attachment: fixed; /* Fixed background */
+    background-position: center; /* Centered */
+    background-repeat: no-repeat; /* No repeat */
+    background-size: cover; /* Cover the entire section */
+}
+
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -491,7 +502,11 @@ header {
     text-align: center;
     padding-top: 80px; /* Space for fixed header */
     font-family: Poppins;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
 }
+
 
 .hero-text h1 {
   font-size: 2rem;
@@ -534,6 +549,7 @@ header {
   text-align: center;
   text-decoration: none #FFFFFF;
   text-decoration-thickness: auto;
+  transition: background-color 0.3s, transform 0.3s;
   transition-duration: .2s;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
@@ -544,6 +560,7 @@ header {
 
 .cat_button:hover {
   background-color: #5A8A3B; /* Vibrant hover color */
+  transform: scale(1.05);
 }
 
 .content_con {
@@ -675,6 +692,15 @@ header {
     font-size: 28px;
     text-align: center;
   }
+
+.main_box, .zoom_box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.main_box:hover, .zoom_box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
   
 .button {
   padding-top: 10px;
@@ -693,6 +719,7 @@ header {
   text-align: center;
   text-decoration: none #FFFFFF;
   text-decoration-thickness: auto;
+  transition: background-color 0.3s, transform 0.3s;
   transition-duration: .2s;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
@@ -705,6 +732,7 @@ header {
 
 .button:hover {
   background-color: #5A8A3B; /* Vibrant hover color */
+  transform: scale(1.05);
 }
 
 .front_img{
@@ -1388,6 +1416,19 @@ footer ul {
 	color: white;
 	margin-bottom: 10px;
 }
+
+/* animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 
 @media screen and (max-width: 600px) {
     .menu-icon {
