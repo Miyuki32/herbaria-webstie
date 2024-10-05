@@ -230,57 +230,71 @@
     padding: 10px;
   }
   
-  /* Tutorial end */
+/* Tutorial end */
 
-  /* return to top button */
-  .top_button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    background: transparent;
-    width: 50px;
-    height: 50px;
-    z-index: 1000;
-  }
+/* return to top button */
+.top_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  background: transparent;
+  width: 40px; /* Default button size */
+  height: 40px;
+  z-index: 1000;
+  opacity: 0.4; /* Partially transparent at first */
+  transition: all 0.3s ease;
+  cursor: pointer; /* Pointer cursor for better interaction */
+}
 
+/* Styling for the leaf image */
 .leaf_image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
+/* Figcaption text hidden by default */
 .top_button .text {
   position: absolute;
   white-space: nowrap;
-  opacity: 0;
-  transition: all 0.3s ease;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease, transform 0.3s ease;
   background-color: #4CAF50;
   color: white;
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 14px;
   pointer-events: none;
-  transform: translateY(0) translateX(-75%); /* Shifted more to the left */
+  transform: translateY(0) translateX(-75%);
   bottom: 100%;
   left: 50%;
   margin-bottom: 10px;
 }
 
-.top_button:hover .leaf_image {
-  transform: scale(1.1);
+/* Hover state for the button */
+.top_button:hover {
+  width: 55px; /* Slightly larger on hover */
+  height: 55px;
+  opacity: 1; /* Fully visible on hover */
 }
 
-.top_button:hover .text {
-  opacity: 1;
-  transform: translateY(-5px) translateX(-75%); /* Maintain left shift on hover */
+/* More subtle zoom on the leaf image */
+.top_button:hover .leaf_image {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
+
+/* Showing the text on hover */
+.top_button:hover .text {
+  opacity: 1; /* Text becomes visible */
+  transform: translateY(-5px) translateX(-75%);
+}
+
 
 /* Genus box aside conten */
 

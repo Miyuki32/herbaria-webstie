@@ -413,6 +413,14 @@ header {
   width: 50%;
 }
 
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 50%;
+}
+
 .abtus_content {
   padding: 15px;
   display: flex;
@@ -541,7 +549,7 @@ padding-bottom: 50px;
   text-align: center;
 }
 
-#species{
+#species_img{
   width: 100%;
 }
 
@@ -794,12 +802,16 @@ th{
   margin-top: 0;
 }
 
-.identify_aside ul {
+.identify_aside dl{
   padding-left: 10px;
 }
 
+.identify_aside dl ul {
+  padding-left: 30px;
+}
+
 .def_image_leaf {
-  margin-left: 25px;
+  margin-left: 15%;
 }
 
 .def_image_tools {
