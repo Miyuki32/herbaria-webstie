@@ -4,34 +4,59 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Herbarium</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/enhancement.css">
+        <link rel="stylesheet" href="./style/media.css">
+        <link rel="stylesheet" href="./style/form.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     </head> 
     <body>
+        <div id="top"></div>
         <header>
             <div class="logo">
-                <a href="main.html"><img src="./images/potato.png" alt="Logo"></a>
+                <a href="main.html"><img src="./style/images/logo.png" alt="Logo"></a>
             </div>
-            <input type="checkbox" id="menu-toggle">
             <label class="menu-icon" for="menu-toggle">&#9776;</label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="./classify.html">Classification</a></li>
-                    <li><a href="./tutorial.html">Tutorial</a></li>
-                    <li><a href="./tools.html">Tools</a></li>
-                    <li><a href="./care.html">Care</a></li>
-                    <li><a href="#">Identify</a></li>
-                    <li><a href="#">Contribute</a></li>
-                    <li><a href="#">Enquiry</a></li>
+                    <li><a href="classify.html">Classification</a></li>
+                    <li class="dropdown">
+                        <a href="#">Resources</a>
+                        <div class="dropdown-nav">
+                            <a href="tutorial.html">Tutorial</a>
+                            <a href="tools.html">Tools</a>
+                            <a href="care.html">Care</a>
+                            <a href="identify.html">Identify</a>
+                        </div>
+                    </li>
+                    <li><a href="contribute.html">Contribute</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                 </ul>
             </nav>
         </header>
+        
         <section class="hero">
             <div class="hero-text">
                 <h1>Welcome to the Identify</h1>
                 <p>Your guide to understanding on how to indentify a plant.</p>
             </div>
         </section>
+        <div class="upload_divider" id="identify_form">
+            <h1>Need help identifying plants?</h1>
+        </div>
+        <div class="content_con">
+            <form action="/upload" method="post" enctype="multipart/form-data" class="upload_form" onsubmit="return false;">
+                <div class="upload_container">
+                    <div class="upload_icon">⬇️</div>
+                    <p class="upload_text">Choose a file or drag it here.</p>
+                    <input type="file" id="file_upload" name="file_upload" accept="image/*">
+                </div>
+                <button class="upload_button">
+                    <span class="button_text">Upload File</span>
+                    <span class="button_leaf"></span>
+                </button>
+            </form>
+        </div>
         <div class="class_divider">
             <h1>How can you identify a plant?</h1>
         </div>
@@ -63,9 +88,19 @@
                             </li>
                         </ul>
                     </div>
+                    <aside class="identify_aside">
+                        <h4>Quick Tip: Leaf Patterns</h4>
+                        <p>When identifying plants, pay close attention to leaf patterns. Some common patterns include:</p>
+                        <ul>
+                            <li>Palmate: Leaves spread out like fingers from a palm</li>
+                            <li>Pinnate: Leaflets arranged along both sides of a stem</li>
+                            <li>Bipinnate: Twice divided pinnate leaves</li>
+                        </ul>
+                        <p>Recognizing these patterns can greatly assist in narrowing down plant species!</p>
+                    </aside>
                 </div>
                 <figure class="def_image_leaf">
-                    <img src="./images/leaves.png" alt="leaf" id="leaf">
+                    <img src="./style/images/leaves.png" alt="leaf" id="leaf">
                     <figcaption>Image of a leaf. From <a href="https://www.pexels.com/photo/nature-plant-leaf-leaves-36008/">Pexels</a>.</figcaption>
                 </figure>
             </div>
@@ -106,10 +141,14 @@
                     </div>
                 </div>
                 <figure class="def_image_tools">
-                    <img src="./images/plant_indentifier-removebg.png" alt="tools" id="tools">
+                    <img src="./style/images/plant_indentifier-removebg.png" alt="tools" id="tools">
                     <figcaption>Image of a PlantCam App. From <a href="https://www.plantidapp.com/">PlantID</a>.</figcaption>
                 </figure>
             </div>
         </div>
+        <a href="#top" class="top_button">
+            <img src="./style/images/leaf.png" alt="Back to top" class="leaf_image">
+            <span class="text">Back to top</span>
+        </a>
     </body>
 </html>

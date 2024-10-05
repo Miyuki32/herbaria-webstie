@@ -4,25 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Herbarium</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/enhancement.css">
+        <link rel="stylesheet" href="./style/media.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     </head> 
     <body>
         <header>
             <div class="logo">
-                <a href="main.html"><img src="./images/potato.png" alt="Logo"></a>
+                <a href="main.html"><img src="./style/images/logo.png" alt="Logo"></a>
             </div>
-            <input type="checkbox" id="menu-toggle">
             <label class="menu-icon" for="menu-toggle">&#9776;</label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="./classify.html">Classification</a></li>
-                    <li><a href="./tutorial.html">Tutorial</a></li>
-                    <li><a href="./tools.html">Tools</a></li>
-                    <li><a href="./care.html">Care</a></li>
-                    <li><a href="#">Identify</a></li>
-                    <li><a href="#">Contribute</a></li>
-                    <li><a href="#">Enquiry</a></li>
+                    <li><a href="classify.html">Classification</a></li>
+                    <li class="dropdown">
+                        <a href="#">Resources</a>
+                        <div class="dropdown-nav">
+                            <a href="tutorial.html">Tutorial</a>
+                            <a href="tools.html">Tools</a>
+                            <a href="care.html">Care</a>
+                            <a href="identify.html">Identify</a>
+                        </div>
+                    </li>
+                    <li><a href="contribute.html">Contribute</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,29 +58,33 @@
                     </div>
                 </div>
                 <figure class="def_image_taxonomy">
-                    <img src="./images/taxanomy.png" alt="taxonomy" id="taxonomy">
+                    <img src="./style/images/taxanomy.png" alt="taxonomy" id="taxonomy">
                     <figcaption>Image of Taxonomy. From <a href="https://www.vrogue.co/post/five-kingdom-classification-of-plants-and-animals-pmf-ias">Vrouge.co</a>.</figcaption>
                 </figure>
             </div>
         </div>
         <div class="content_con">
-            <section class="class_border">
-                <h2 id="genus">Genus</h2>
-            </section>
+            <div class="section class_border">
+              <h2>Genus</h2>
+            </div>
+            
             <div class="class_def">
-                <figure class="def_image_genus">
-                    <img src="./images/genus.jpg" alt="genus" id="Genus">
-                    <figcaption>Image of Genus. From <a href="https://www.biologyonline.com/dictionary/genus">Biology Online</a>.</figcaption>
-                </figure>
-                <div class="genus_box">
-                    <h3>According to <a href="https://dictionary.cambridge.org/dictionary/english/genus">Cambridge Dictionary</a>, genus means:</h3>
-                    <br>
-                    <div class="class_textarea">
-                        <p>A group of animals or plants, more closely related than a family, but less similar than a species</p>
-                    </div>
-                    <br>
-                    <aside><i>Fun fact: In 2018, the <a href="https://www.catalogueoflife.org/">Catalogue of Life</a> quoted 173,363 accepted genus names for both extant and extinct species.</i></aside>
+              <figure class="def_image_genus">
+                <img src="./style/images/genus.jpg" id="Genus" alt="genus" />
+                <figcaption>Image of Genus. From <a href="https://www.biologyonline.com/dictionary/genus">Biology Online</a>.</figcaption>
+              </figure>
+              <div class="genus_box">
+                <h3>According to <a href="https://dictionary.cambridge.org/dictionary/english/genus">Cambridge Dictionary</a>, genus means:</h3>
+                <div class="class_textarea">
+                  A group of animals or plants, more closely related than a family, but less similar than a species
                 </div>
+              </div>
+              <aside class="slide_panel">
+                <div class="slide_trigger">&#9658;</div>
+                <div class="slide_content">
+                  <p><em>Fun fact: In 2018, the <a href="https://www.catalogueoflife.org/">Catalogue of Life</a> quoted 173,363 accepted genus names for both extant and extinct species.</em></p>
+                </div>
+              </aside>
             </div>
         </div>
         <div class="content_con">
@@ -95,7 +105,7 @@
                     </div>
                 </div>
                 <figure class="def_image_species">
-                    <img src="./images/species-removebg-preview.png" alt="species" id="species">
+                    <img src="./style/images/species-removebg-preview.png" alt="species" id="species">
                     <figcaption>Image of Genus. From <a href="https://biologydictionary.net/species/">Biology Dictionary</a>.</figcaption>
                 </figure>
             </div>
@@ -109,7 +119,7 @@
             </section>
             <div class="class_classification">
                 <div class="fade_container">
-                    <img src="./images/shorea_faguetiana.jpg" alt="shorea_faguetiana" class="fade_image">
+                    <img src="./style/images/shorea_faguetiana.jpg" alt="shorea_faguetiana" class="fade_image">
                     <div class="fade_overlay">
                       <div class="fade_text"><a href="https://en.wikipedia.org/wiki/Shorea_faguetiana">Shorea Faguetiana</a></div>
                     </div>
@@ -143,7 +153,7 @@
             </section>
             <div class="class_classification">
                 <div class="fade_container">
-                    <img src="./images/endiandra_bullata.jpg" alt="endiandra_bullata" class="fade_image">
+                    <img src="./style/images/endiandra_bullata.jpg" alt="endiandra_bullata" class="fade_image">
                     <div class="fade_overlay">
                       <div class="fade_text"><a href="https://www.selinawamucii.com/plants/lauraceae/endiandra-bullata/">Endiandra bullataa</a></div>
                     </div>
@@ -177,7 +187,7 @@
             </section>
             <div class="class_classification">
                 <div class="fade_container">
-                    <img src="./images/canarium_australasicum.jpg" alt="Canarium_australasicum" class="fade_image">
+                    <img src="./style/images/canarium_australasicum.jpg" alt="Canarium_australasicum" class="fade_image">
                     <div class="fade_overlay">
                       <div class="fade_text"><a href="https://en.wikipedia.org/wiki/Canarium_australasicum">Canarium Australasicum</a></div>
                     </div>
@@ -211,44 +221,47 @@
                     <h2 class="ft-title">Navigate</h2>
                     <ul>
                         <li><a href="main.html">Home</a></li>
-                        <li><a href="">Our Story</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contribute.html">Contribute</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
                     </ul>
                 </div>
                 <div class="ft-main-item">
-                    <h2 class="ft-title">Dipterocarpaceae</h2>
+                    <h2 class="ft-title">Resources</h2>
                     <ul>
-                        <li><a href="">placeholder</a></li>
-                        <li><a href="">placeholder</a></li>
-                        <li><a href="">placeholder</a></li>
+                        <li><a href="care.html">Care</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="tutorial.html">Tutorial</a></li>
                     </ul>
                 </div>
                 <div class="ft-main-item">
-                    <h2 class="ft-title">Lauraceae</h2>
+                    <h2 class="ft-title">Classification</h2>
                     <ul>
-                        <li><a href="">placeholder</a></li>
-                        <li><a href="">placeholder</a></li>
-                        <li><a href="">placeholder</a></li>
+                        <li><a href="classify.html#dipterocarpaceae">Dipterocarpaceae</a></li>
+                        <li><a href="classify.html#lauraceae">Lauraceae</a></li>
+                        <li><a href="classify.html#burseraceae">Burseraceae</a></li>
                     </ul>
                 </div>
                 <div class="ft-main-item">
-                    <h2 class="ft-title">Burseraceae</h2>
+                    <h2 class="ft-title"><a href="identify.html">Identify</a></h2>
                     <ul>
-                        <li><a href="">placeholder</a></li>
-                        <li><a href="">placeholder</a></li>
-                        <li><a href="">placeholder</a></li>
+                        <li><a href="identify.html#family">Family</a></li>
+                        <li><a href="identify.html#genus">Genus</a></li>
+                        <li><a href="identify.html#species">Species</a></li>
                     </ul>
                 </div>
                 <div class="ft-main-item">
-                    <h2 class="ft-title"><a href="">About Us</a></h2>
+                    <h2 class="ft-title">About Us</h2>
                     <ul>
-                        <li><a href="">The Team</a></li>
-                        <li><a href="">Our Vision</a></li>
-                        <li><a href="">Feedback</a></li>
+                        <li><a href="porfile.html">The Team</a></li>
+                        <li><a href="main.html#about_us">Our Vision</a></li>
                     </ul>
                 </div>
             </section>
+            <p class="ft-copy">&copy; 2024 DaFwiedPotato. All rights reserved.</p>
         </footer>
+        <a href="#top" class="top_button">
+            <img src="./style/images/leaf.png" alt="Back to top" class="leaf_image">
+            <span class="text">Back to top</span>
+        </a>
     </body>
 </html>
