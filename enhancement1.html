@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enhancements</title>
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/enhancement.css">
+        <link rel="stylesheet" href="./style/media.css">
+        <link rel="stylesheet" href="./style/form.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    </head> 
+    <body>
+        <header>
+            <div class="logo">
+                <a href="main.html"><img src="./style/images/logo.png" alt="Logo"></a>
+            </div>
+            <label class="menu-icon" for="menu-toggle">&#9776;</label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="classify.html">Classification</a></li>
+                    <li class="dropdown">
+                        <a href="#">Resources</a>
+                        <div class="dropdown-nav">
+                            <a href="tutorial.html">Tutorial</a>
+                            <a href="tools.html">Tools</a>
+                            <a href="care.html">Care</a>
+                            <a href="identify.html">Identify</a>
+                        </div>
+                    </li>
+                    <li><a href="contribute.html">Contribute</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero" id="classify_hero">
+            <div class="hero-text">
+                <h1>Welcome to Enhancements</h1>
+                <p>Your guide to understanding the key features of the website</p>
+            </div>
+        </section>
+        <div class="divider">
+            <h1>What are the enhancement used in this website?</h1>
+        </div>
+        <div class="content_con">
+            <section class="class_border">
+                <h2 id="family">Lift effects when hover</h2>
+            </section>
+            <div class="class_def">
+                <div class="box_container">
+                    <div class="main_box">
+                      <div class="box_content">
+                      </div>
+                    </div>
+                    <div class="enhancement_text">
+                        <p>Lift while hover is an enhancement appearing throughout main.html boxes. This effect is achieved with <a href="https://www.w3schools.com/cssref/css3_pr_transform.php">transform: translateY(-5px);.</a> This effect is implemented so that the boxes in main.html will be more stand out visually. <a href="main.html">Click here to see this effect in the website.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_con">
+            <section class="class_border">
+                <h2 id="family">Image zoom effect to reveal content box</h2>
+            </section>
+            <div class="class_def">
+                <div class="box_container">
+                    <div class="zoom_box">
+                        <div class="mbox_front">
+                            <img src="./style/images/shorea_faguetiana.jpg" class="front_img" alt="shorea_faguetiana">
+                        </div>
+                        <br><br><br>
+                        <div class="zoom_box_content">
+                            <h3>Dipterocarpaceae</h3>
+                            <button class="button" onclick="location.href = './classify.html#dipterocarpaceae'">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="enhancement_text">
+                        <p>The .zoom_box class is a class to style a container with a background color #FAFAQ0, rounded corners, and shadow for a raised effect that looks appealing all visually. It's a flexbox element and it moves smoothly from one visibility level/point to another when hovered. The front element, .mbox_front, is an element that is absolutely adhered to it and covers the whole box, but, when on hover, it transforms into a smaller version of the image and placing on top of the content which is hidden behind. This effect has taken inspiration from <a href="https://www.youtube.com/watch?v=IFai8qTKvEM">Online Tutorials</a>, and are being used under <a href="main.html#classify">Classification in main webpage.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_con">
+            <div class="section class_border" id="genus">
+              <h2>Hidden aside text area / Slide Panel</h2>
+            </div>
+            <div class="class_def">
+              <div class="genus_box">
+                <div class="class_textarea">
+                    <p>By using the effect we can create a sliding panel intra-action that appears when hovered over by positioning it off-screen to the right (right: -30vw) and moving it into view (right: 0) using CSS transitions. The panel rarely visible and moved out of view by default (inactive) through the setting creating a smooth sliding effect in the user experience. The transform: translateY(-50%) ensures that the panel is always directly at the middle vertically. Also, transition: right 0.3s ease-out;, once activated, simply controls the sliding speed. This feature draws inspiration from <a href="https://speckyboy.com/vertical-slide-menu-css-transitions/">Speckyboy</a>, and is used in <a href="./classify.html#genus">genus under classify page.</a></p>
+                </div>
+              </div>
+              <aside class="slide_panel">
+                <div class="slide_trigger">&#9658;</div>
+                <div class="slide_content">
+                  <p><em>Fun fact: In 2018, the <a href="https://www.catalogueoflife.org/">Catalogue of Life</a> quoted 173,363 accepted genus names for both extant and extinct species.</em></p>
+                </div>
+              </aside>
+            </div>
+        </div>
+        <div class="content_con">
+            <section class="class_border">
+                <h2>Fade Image Text</h2>
+            </section>
+            <div class="class_classification">
+                <div class="fade_container">
+                    <img src="./style/images/shorea_faguetiana.jpg" alt="shorea_faguetiana" class="fade_image">
+                    <div class="fade_overlay">
+                      <div class="fade_text"><a href="https://en.wikipedia.org/wiki/Shorea_faguetiana">Shorea Faguetiana</a></div>
+                    </div>
+                </div>                  
+                <div class="class_def">
+                    <p>The class .fade_container is coded to produce a fade-in overlay effect for images in classify.html. An overlay is shown on one side when a user hits the mouse over, which leads to the content becoming more visible. The overlay is made up of centered text links that are brought into focus against the image, as the user is able to interact with the content by clicking on the links. This feature is based on <a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">Image Hover Overlay from W3Schools</a>, and is used under examples in <a href="classify.html#examples">Examples under classify webpage.</a>
+                </div>
+            </div>
+        </div>
+        <div class="upload_divider">
+            <h1>Header with effects</h1>
+        </div>
+        <div class="content_con">
+            <div class="class_def">
+                <p>The upload_divider class utilizes pseudo-elements to create decorative floating leaf emojis (🍃) on both the top left and bottom right corners. These emojis are animated to create a gentle floating effect using keyframe animations. The ::before pseudo-element floats the emoji to the left, while the ::after pseudo-element floats the emoji to the right, each with distinct animations. The animations involve translating and rotating the emojis to simulate a natural floating motion, enhancing the visual appeal of the divider. This animation is made using <a href="https://www.w3schools.com/css/css3_animations.asp">W3Schools' documentation</a> on animations. This is only used in one header in <a href="identify.html#identify_form">identify webpage.</a></p>
+            </div>
+        </div>
+        <footer>
+            <section class="ft-main">
+                <div class="ft-main-item">
+                    <h2 class="ft-title">Navigate</h2>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="contribute.html">Contribute</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title">Resources</h2>
+                    <ul>
+                        <li><a href="care.html">Care</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="tutorial.html">Tutorial</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title">Classification</h2>
+                    <ul>
+                        <li><a href="classify.html#dipterocarpaceae">Dipterocarpaceae</a></li>
+                        <li><a href="classify.html#lauraceae">Lauraceae</a></li>
+                        <li><a href="classify.html#burseraceae">Burseraceae</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title"><a href="identify.html">Identify</a></h2>
+                    <ul>
+                        <li><a href="identify.html#family">Family</a></li>
+                        <li><a href="identify.html#genus">Genus</a></li>
+                        <li><a href="identify.html#species">Species</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title">About Us</h2>
+                    <ul>
+                        <li><a href="porfile.html">The Team</a></li>
+                        <li><a href="main.html#about_us">Our Vision</a></li>
+                    </ul>
+                </div>
+            </section>
+            <p class="ft-copy">&copy; 2024 DaFwiedPotato. All rights reserved.</p>
+        </footer>
+        <a href="#top" class="top_button">
+            <figure>
+                <img src="./style/images/leaf.png" alt="Leaf" class="leaf_image">
+                <figcaption class="text">Back to Top</figcaption>
+            </figure>
+        </a>
+    </body>
+</html>

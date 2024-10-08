@@ -357,6 +357,7 @@ input[type="submit"]:hover {
   50% { transform: translate(-15px, 15px) rotate(-10deg); }
 
 }
+
 .upload_divider h1 {
   color: white;
   margin: 0;
@@ -396,7 +397,6 @@ input[type="submit"]:hover {
 
 .upload_icon {
   font-size: 100px;
-  color: #2c5234;
   margin-bottom: 15px;
 }
 

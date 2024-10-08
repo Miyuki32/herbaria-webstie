@@ -80,7 +80,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    width: 95%;
+    width: 96%;
     opacity: 0;
     transition: .5s ease;
     border-radius: 20px;
@@ -297,7 +297,6 @@
 
 
 /* Genus box aside conten */
-
 .slide_panel {
   position: absolute;
   top: 50%;

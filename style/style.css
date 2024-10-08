@@ -11,10 +11,10 @@ html{
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
+  color: #FFFFFF;
 }
 
 h1, h2, h3 {
@@ -41,7 +41,6 @@ h3 {
 
 
 .button, .cat_button, input[type="text"] {
-  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   font-size: 1rem;
 }
@@ -62,7 +61,6 @@ h3 {
     cursor: pointer;
     color: white;
     display: block;
-    font-family: Poppins;
     z-index: 20; /* Ensure it is above other elements */
 }
 
@@ -164,34 +162,22 @@ header {
 }
 
 
-/* Elemtents for Dividers */
-
-.divider{
-  background-color: #2b4b2f;
-  text-align: center;
-  height: 80px;
-  padding-top: 5px;
-  font-family: Poppins;
-}
-
 .class_divider{
   background-color: #2b4b2f;
   text-align: center;
   height: 80px;
   padding-top: 5px;
-  font-family: Poppins;
 }
 
 .class_border {
-    background-color: #3B5E3A; /* Deeper green */
-    color: white;
-    text-align: center;
-    height: 80px;
-    padding-top: 5px;
-    font-family: Poppins;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #3B5E3A;
+  color: white;
+  text-align: center;
+  height: 80px;
+  padding-top: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -201,40 +187,40 @@ header {
 }
 
 /* Hero Section */
-
-.parallax {
-    /* Background image for the parallax effect */
-    height: 100vh; /* Full viewport height */
-    background-attachment: fixed; /* Fixed background */
-    background-position: center; /* Centered */
-    background-repeat: no-repeat; /* No repeat */
-    background-size: cover; /* Cover the entire section */
-}
-
-
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url('images/farm-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding-top: 80px; /* Space for fixed header */
-    font-family: Poppins;
-    background-color: rgba(0, 0, 0, 0.3); /* Optional: Semi-transparent background for better readability */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+  padding: 20px;
+  position: relative;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
 
 .hero-text h1 {
   font-size: 2rem;
   margin-bottom: 10px;
-  font-family: Poppins;
 }
 
 .hero-text p {
@@ -244,14 +230,26 @@ header {
   color: #ffffff;
 }
 
+#main_hero {
+  background-image: url('./images/215595.gif');
+}
+
+#classify_hero {
+  background-image: url('./images/South-East-Asia-scaled.jpg');
+}
+
+#identify_hero {
+  background-image: url('./images/identify_bg.gif');
+}
+
 .product-categories {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 90%;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
     
 }
 
@@ -264,14 +262,13 @@ header {
   color: #FFFFFF;
   cursor: pointer;
   flex: 0 0 auto;
-  font-family: Poppins;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
   padding: .75rem 1.2rem;
   text-align: center;
-  text-decoration: none #FFFFFF;
-  text-decoration-thickness: auto;
+  text-decoration: none;
+  text-decoration-thickness: auto;  
   transition: background-color 0.3s, transform 0.3s;
   transition-duration: .2s;
   transition-property: background-color, border-color, color, fill, stroke;
@@ -286,13 +283,7 @@ header {
   transform: scale(1.05);
 }
 
-.content_con {
-  background-color: #F0EAD6; /* Slightly warmer light beige */
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+
 
 .other_resources{
   border-radius: 10px;
@@ -302,15 +293,35 @@ header {
   width: 100%;
 }
 
+/* Element for divider */
+
 .border {
   background-color: #3B5E3A; /* Deeper green */
   color: white;
   text-align: center;
   height: 80px;
   padding-top: 15px;
-  font-family: Poppins;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+/* Elemtents for Dividers */
+
+.divider{
+  background-color: #2b4b2f;
+  text-align: center;
+  height: 80px;
+  padding-top: 5px;
+}
+
+
+
+.content_con {
+  background-color: #F0EAD6; /* Slightly warmer light beige */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .box_container {
@@ -339,7 +350,6 @@ header {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: Poppins;
 }
 
 .box_content h3 {
@@ -354,20 +364,6 @@ header {
   text-align: justify;
 }
 
-.abtus_box {
-  width: 350px;
-  height: 400px;
-  background: #FAF3E0; /* Slightly richer off-white */
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  margin: 20px; /* Reduced margin for better alignment */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added shadow for stand-out effect */
-}
-
- 
 .button {
   padding-top: 10px;
   background-color: #2b4b2f;
@@ -377,13 +373,12 @@ header {
   color: #FFFFFF;
   cursor: pointer;
   flex: 0 0 auto;
-  font-family: Poppins;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
   padding: .75rem 1.2rem;
   text-align: center;
-  text-decoration: none #FFFFFF;
+  text-decoration: none;
   text-decoration-thickness: auto;
   transition: background-color 0.3s, transform 0.3s;
   transition-duration: .2s;
@@ -405,7 +400,7 @@ header {
   width: 100%;
 }
 
-.profile_img{
+.icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -413,7 +408,21 @@ header {
   width: 50%;
 }
 
-.icon {
+
+.abtus_box {
+  width: 350px;
+  height: 400px;
+  background: #FAF3E0; /* Slightly richer off-white */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 20px; /* Reduced margin for better alignment */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added shadow for stand-out effect */
+}
+
+.profile_img{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -427,7 +436,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  font-family: Poppins;
 }
 
 .abtus_content h3 {
@@ -439,37 +447,6 @@ header {
   color: #6D6E6F; /* Subtle gray for text */
   font-size: 16px;
   text-align: center;
-}
-
-
-.class_container{
-  border-radius: 10px;
-  padding: 32px;
-  padding-left: 25%;
-  padding-right: 25%;
-  margin-bottom: 32px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  width: 100%;
-  gap: 20px;
-}
-
-.profile_container{
-margin-left: auto;
-margin-right: auto;
-display: block;
-background-color: #FFFFFF;
-height: auto;
-width: 90%;
-margin-top: 150px;
-}
-
-.profile img{
-margin-left: auto;
-margin-right: auto;
-display: block;
-width: 15%;
-padding-top: 50px;
-padding-bottom: 50px;
 }
 
 
@@ -499,7 +476,6 @@ padding-bottom: 50px;
 
 .class_def h3{
   color: #4A3C31;
-  font-family: Poppins;
 }
 
 .class_def a{
@@ -570,34 +546,12 @@ padding-bottom: 50px;
   color: #4A3C31;
 }
 
-/* Show the menu when the checkbox is checked */
-#menu-toggle:checked + .menu-icon + .navbar {
-  display: block;
-}
 
 .class_textarea ol{
   padding-left: 20px;
   list-style-type: lower-roman;
 }
 
-/* Background */
-body {
-  background-image: url('images/215595.gif');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-
-.product-categories {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 90%;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
 
 .class_textarea {
   flex: 1; /* Let text area take up remaining space */
@@ -614,98 +568,11 @@ body {
   margin-left: 30px;
 }
 
-/* Starting here is profile page */
-
-.profile_container{
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	height: auto;
-	width: 90%;
-	margin-top: 150px;
-  background-color: #FFFFFF;
-  box-shadow: 8px 8px 8px 5px black;
-  border-radius: 20px;
+/* Show the menu when the checkbox is checked */
+#menu-toggle:checked + .menu-icon + .navbar {
+  display: block;
 }
 
-.profile img{
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: 15%;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	border-radius: 50%;
-}
-
-.profile_name{
-  color: black;
-  font-weight: 600;
-  font-size: 25px;
-  font-family: Poppins;
-}
-
-.profile_id{
-  color: black;
-  font-weight: 600;
-  font-family: Poppins;
-  font-size: 25px;
-}
-
-.profile_description{
-  color: black;
-  font-weight: 600;
-  font-size: 25px;
-  padding-bottom: 50px;
-  font-family: Poppins;
-}
-
-.profile img{
-	width: 300px;
-	height: 400px;
-}
-
-.profile_table_container{
-	text-align: center;
-}
-
-.profile_table{
-	margin-left: auto;
-	margin-right: auto;
-  border-collapse: collapse;
-}
-
-table, th, td {
-  border: 3px solid;
-}
-
-td{
-	color: black;
-  width: 20%;
-  height: 10%;
-	padding: 50px 50px;
-  justify-content: space-between;
-	text-align: center;
-	background-color: #cce6a1;
-	font-size: 20px;
-}
-
-th{
-	padding-left: 20px;
-	color: black;
-	text-align: center;
-  background-color: #8D9E6F;
-  font-family: Poppins;
-  font-size: 25px;
-}
-
-.email_button{
-  color: black;
-  margin-left: 48%;
-  margin-right: 45%;
-  margin-top: 15px;
-  padding: 8px;
-}
 
 /* Tools start */
 .tool_stages_figure img{
@@ -760,7 +627,6 @@ th{
 
 .tools_def h3{
   color: #4A3C31;
-  font-family: Poppins;
 }
 
 .tools_def a{
@@ -788,7 +654,6 @@ th{
 
 .identify_aside {
   flex-basis: 100%;
-  background-color: #e6f0e2;
   border-left: 4px solid #355e3b;
   padding: 15px;
   margin-top: 20px;
@@ -824,7 +689,6 @@ th{
 footer ul {
     list-style: none;
     padding-left: 0;
-    font-family: Poppins;
   }
   
   footer {
@@ -845,7 +709,6 @@ footer ul {
   /* Style for footer titles */
   .ft-title {
     color: white;
-    font-family: Poppins, serif;
     font-size: 22px;
     padding-bottom: 10px;
   }
