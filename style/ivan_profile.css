@@ -1,5 +1,5 @@
 body {
-    background: url('./images/aegis_bg.jpg') no-repeat center center fixed;
+    background: url('./images/juani_bg.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -120,6 +120,17 @@ td {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
 }
+
+td ul li {
+    text-align: left;
+    color: #006d6d;
+    margin-left: 1.5%;
+}
+
+#hobby {
+    text-align: left;
+}
+
 
 /* Fade-in Effect for Table Rows */
 .profile_table tr {

@@ -1199,3 +1199,940 @@ text-decoration: none;
 color: white;
 margin-bottom: 10px;
 }
+
+/* Dropdown login button */
+.dropbtn {
+  background-color: #2b4b2f;
+  font-family: 'Poppins';
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ccc;
+  min-width: 250px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  padding: 16px;
+  z-index: 1;
+}
+
+.dropdown-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content label {
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #333;
+}
+
+.dropdown-content input {
+  color: #000000;
+  font-size: 15px;
+  margin-bottom: 12px;
+  padding: 8px;
+  border: 1px solid #F0EAD6;
+  border-radius: 4px;
+}
+
+.dropdown-content input[type="submit"] {
+  background-color: #2b4b2f;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.dropdown-content p {
+  color: #000000;
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: #2b4b2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+/* Register page styles */
+.register-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 40px;
+background-color: rgba(240, 234, 214, 0.9);
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.register-form {
+background-color: white;
+padding: 32px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+width: 100%;
+max-width: 400px;
+margin: 0 auto;
+}
+
+.register-form h1 {
+color: #3B5E3A;
+text-align: center;
+margin-bottom: 24px;
+font-family: 'Merriweather', serif;
+font-size: 2rem;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 8px;
+color: #4A3C31;
+font-weight: 600;
+}
+
+.form-group input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+color: #333;
+}
+
+.form-group input:focus {
+border-color: #3B5E3A;
+outline: none;
+box-shadow: 0 0 5px rgba(59, 94, 58, 0.5);
+}
+
+.register-button {
+width: 100%;
+padding: 12px;
+background-color: #3B5E3A;
+color: white;
+border: none;
+border-radius: 5px;
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+background-color: #5A8A3B;
+}
+
+.register-form p {
+margin-top: 20px;
+text-align: center;
+color: #4A3C31;
+}
+
+.register-form a {
+color: #3B5E3A;
+text-decoration: none;
+font-weight: 600;
+}
+
+.register-form a:hover {
+text-decoration: underline;
+}
+/* Contribute Page Styles */
+.bg_contribute {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 0;
+}
+
+.contribute-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contribute-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contribute-intro h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contribute-intro p {
+  color: #ffffff;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contribute-form-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.contribute-form-container h2 {
+  color: #2b4b2f;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contribute-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #4a4a4a;
+}
+
+.form-group p{
+font-weight: 600;
+margin-bottom: 5px;
+color: #4a4a4a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #3B5E3A;
+  box-shadow: 0 0 5px rgba(59, 94, 58, 0.5);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.radio-group {
+  font-size: 1rem;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-group input[type="file"] {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-instructions {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.submit-button {
+  background-color: #3B5E3A;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #5A8A3B;
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* jack stuff */
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Enquiry Form Styles */
+.enquiry-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 40px;
+background-color: rgba(240, 234, 214, 0.9); /* Slightly transparent background */
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.enquiry-container h1 {
+color: #3B5E3A;
+font-family: 'Poppins', serif;
+font-size: 2.6rem;
+margin-bottom: 30px;
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+label {
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+color: #4A3C31;
+margin-bottom: 5px;
+display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+border-color: #3B5E3A;
+box-shadow: 0 0 5px rgba(59, 94, 58, 0.5);
+outline: none;
+}
+
+fieldset {
+border: 2px solid #3B5E3A;
+border-radius: 5px;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+legend {
+font-family: 'Merriweather', serif;
+font-weight: 600;
+color: #3B5E3A;
+padding: 0 10px;
+}
+
+select {
+appearance: none;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%233B5E3A' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+background-repeat: no-repeat;
+background-position: right 10px center;
+padding-right: 30px;
+}
+
+input[type="submit"] {
+background-color: #3B5E3A;
+color: white;
+font-family: 'Poppins', sans-serif;
+font-size: 1.1rem;
+font-weight: 600;
+padding: 12px 24px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s;
+align-self: center;
+}
+
+input[type="submit"]:hover {
+background-color: #5A8A3B;
+transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+transform: translateY(0);
+}
+
+/* Upload image in identify.hmlt */
+
+.upload_divider {
+background-color: #2c5234;
+padding: 30px 20px;
+position: relative;
+overflow: hidden;
+}
+
+.upload_divider::before,
+.upload_divider::after {
+content: '🍃';
+position: absolute;
+font-size: 50px;
+pointer-events: none;
+}
+
+.upload_divider::before {
+top: 10px;
+left: 5%;
+animation: float_left 10s ease-in-out infinite;
+}
+
+.upload_divider::after {
+bottom: 10px;
+right: 5%;
+animation: float_right 12s ease-in-out infinite;
+}
+
+@keyframes float_left {
+0%, 100% { transform: translate(0, 0) rotate(0deg); }
+50% { transform: translate(15px, -15px) rotate(10deg); }
+}
+
+@keyframes float_right {
+0%, 100% { transform: translate(0, 0) rotate(0deg); }
+50% { transform: translate(-15px, 15px) rotate(-10deg); }
+
+}
+.upload_divider h1 {
+color: white;
+margin: 0;
+text-align: center;
+position: relative;
+}
+
+.upload_form {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.upload_container {
+width: 80%;
+height: 60vh;
+border: 2px dashed #2c5234;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+overflow: hidden;
+margin-bottom: 20px;
+transition: all 0.3s ease;
+margin-left: auto;
+margin-right: auto;
+z-index: 1;
+}
+
+.upload_container:hover {
+border-color: #1e3a24;
+background-color: #f0f4f0;
+}
+
+.upload_icon {
+font-size: 100px;
+color: #2c5234;
+margin-bottom: 15px;
+}
+
+.upload_text {
+color: #666;
+font-size: 30px;
+text-align: center;
+}
+
+.upload_container input[type="file"] {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+cursor: pointer;
+}
+
+.upload_button {
+position: relative;
+padding: 15px 30px;
+font-size: 20px;
+color: #ffffff;
+background-color: #2c5234;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+transition: all 0.3s ease;
+overflow: hidden;
+}
+
+.button_text {
+position: relative;
+z-index: 2;
+color: #e0f0e0;  /* Light green for better visibility */
+text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+transition: all 0.3s ease;
+}
+
+.upload_button::before,
+.upload_button::after {
+content: '🍃';
+position: absolute;
+font-size: 0;
+opacity: 0;
+transition: all 0.3s ease;
+z-index: 1;
+}
+
+.upload_button::before {
+left: 10px;
+top: 50%;
+transform: translateY(-50%) rotate(-30deg);
+}
+
+.upload_button::after {
+right: 10px;
+top: 50%;
+transform: translateY(-50%) rotate(30deg);
+}
+
+.upload_button:hover::before,
+.upload_button:hover::after {
+font-size: 24px;
+opacity: 1;
+}
+
+.upload_button:hover .button_text {
+transform: scale(1.1);
+}
+
+.upload_button:hover {
+background-color: #1e3a24;
+}
+
+/* Zoom box and floating box in main.html */ 
+.zoom_box {
+  width: 350px;
+  height: 220px;
+  background: #FAF3E0; /* Slightly richer off-white */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 20px; /* Reduced margin for better alignment */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added shadow for stand-out effect */
+}
+
+.box_container .zoom_box:hover .mbox_front {
+  top: 20px;
+  left: calc(50% - 50px);
+  width: 100px;
+  border-radius: 50%;
+}
+
+.box_container .zoom_box .mbox_front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.box_container .zoom_box:hover .mbox_front img {
+  border-radius: 20px;
+}
+
+.zoom_box_content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: Poppins;
+  margin-top: 90px;
+}
+
+.zoom_box_content h3 {
+  color: #4A3C31; /* Darker text color for better contrast */
+  font-size: 28px;
+  text-align: center;
+}
+
+.main_box, .zoom_box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.main_box:hover, .zoom_box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+
+/* Fade imgaes in classify.html */
+.fade_container {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.fade_image {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.fade_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 96%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 20px;
+  background-color: #2b4b2f;
+}
+
+.fade_container:hover .fade_overlay {
+  opacity: 1;
+}
+
+.fade_text a{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* return to top button */
+.top_button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+text-decoration: none;
+background: transparent;
+width: 40px; /* Default button size */
+height: 40px;
+z-index: 1000;
+opacity: 0.4; /* Partially transparent at first */
+transition: all 0.3s ease;
+cursor: pointer; /* Pointer cursor for better interaction */
+}
+
+/* Styling for the leaf image */
+.leaf_image {
+width: 100%;
+height: 100%;
+object-fit: contain;
+transition: transform 0.3s ease;
+}
+
+/* Figcaption text hidden by default */
+.top_button .text {
+position: absolute;
+white-space: nowrap;
+opacity: 0; /* Hidden by default */
+transition: opacity 0.3s ease, transform 0.3s ease;
+background-color: #4CAF50;
+color: white;
+padding: 5px 10px;
+border-radius: 20px;
+font-size: 14px;
+pointer-events: none;
+transform: translateY(0) translateX(-75%);
+bottom: 100%;
+left: 50%;
+margin-bottom: 10px;
+}
+
+/* Hover state for the button */
+.top_button:hover {
+width: 55px; /* Slightly larger on hover */
+height: 55px;
+opacity: 1; /* Fully visible on hover */
+}
+
+/* More subtle zoom on the leaf image */
+.top_button:hover .leaf_image {
+transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Showing the text on hover */
+.top_button:hover .text {
+opacity: 1; /* Text becomes visible */
+transform: translateY(-5px) translateX(-75%);
+}
+
+
+/* Genus box aside conten */
+.slide_panel {
+position: absolute;
+top: 50%;
+right: -30vw;
+width: 30vw;
+height: 150px;
+background-color: #F0EAD6;
+transition: right 0.3s ease-out;
+border: 3px solid #4a5568;
+border-radius: 10px;
+border-right: none;
+box-sizing: border-box;
+transform: translateY(-50%);
+}
+
+.slide_trigger {
+position: absolute;
+top: 50%;
+left: -22px;
+width: 20px;
+height: 60px;
+background-color: #4a5568;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+border-radius: 5px 0 0 5px;
+transform: translateY(-50%);
+}
+
+.slide_content {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 15px;
+text-align: center;
+}
+
+.slide_panel:hover,
+.slide_trigger:hover + .slide_panel {
+right: 0;
+}
+
+/* flip card */
+/* tutorial start*/
+
+.flip_box_container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center; /* Center the items horizontally */
+gap: 20px; /* Increased space between each box */
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.class_flip {
+background-color: transparent;
+width: 350px;
+height: 400px;
+padding-top: 20px;
+margin-bottom: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.class_flip_inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.class_flip:hover .class_flip_inner {
+transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.class_flip_front, .class_flip_back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+box-shadow: 6px 6px 6px 0px gray;
+}
+
+.content p{
+padding-top: 30px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.class_flip_front{
+background-color: #3B5E3A;
+color: white;
+border-radius: 15px 50px;
+}
+
+/* Style the back side */
+.class_flip_back {
+background-color: #3B5E3A;
+color: white;
+transform: rotateY(180deg);
+border-radius: 15px 50px;
+padding: 20px;
+}
+
+.class_flip_back h3{
+padding: 10px;
+}
+
+.class_flip_back h3, p{
+color: white;
+}
+
+.class_flip_front img{
+width: 100%;
+height: 100%;
+border-radius: 15px 50px 0px 0px;
+}
+
+/* The end of Flip Cards */
+
+/* identify result images */
+#morning_flower1:hover,
+#morning_flower2:hover,
+#morning_flower3:hover{
+transform: translateY(-5px);
+}
+
+/* Hide the content by default */
+.hide_content {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .hide_content {
+  display: block;
+}
+
+
+
+
