@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="description" content="CWA Help Desk Appointment Form">
         <meta name="keywords" content="Help Desk, Appointment, Form">
-        <meta name="author" content="Ivan Ngu">
+        <meta name="author" content="Neng Yi Chieng">
         <title>Contribute</title>
         <link rel="stylesheet" href="./style/style.css">
         <link rel="stylesheet" href="./style/media.css">
@@ -17,8 +17,8 @@
             <div class="logo">
                 <a href="main.html"><img src="./style/images/logo.png" alt="Logo"></a>
             </div>
-            <input type="checkbox" id="menu-toggle">
-            <label class="menu-icon" for="menu-toggle">&#9776;</label>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <nav class="navbar">
                 <ul>
                     <li><a href="classify.html">Classification</a></li>
@@ -28,7 +28,7 @@
                             <a href="tutorial.html">Tutorial</a>
                             <a href="tools.html">Tools</a>
                             <a href="care.html">Care</a>
-                            <a href="#">Identify</a>
+                            <a href="identify.html">Identify</a>
                         </div>
                     </li>
                     <li><a href="contribute.html">Contribute</a></li>
@@ -38,65 +38,88 @@
         </header>
 
           <!-- Contribute Content -->
-        <div class="bg_contribute">
-            <section class="contribute-content">
+          <div class="bg_contribute">
+            <div class="contribute-content">
                 <section class="contribute-intro">
                     <h1>Contribute to Our Herbarium</h1>
                     <p>Help us grow our collection by sharing your plant discoveries. Your contribution is valuable in expanding our botanical knowledge.</p>
                 </section>
                 
-                    <section class="contribute-form-container">
-                        <h2>Plant Contribution Form</h2>
-                        <form class="contribute-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="plantName">Plant Name</label>
-                                    <input type="text" id="plantName" name="plantName" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="scientificName">Scientific Name</label>
-                                    <input type="text" id="scientificName" name="scientificName" required>
-                                </div>
+                <section class="contribute-form-container">
+                    <h2>Plant Contribution Form</h2>
+                    <form class="contribute-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="plantName">Plant Name</label>
+                                <input type="text" id="plantName" name="plantName" required>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="family">Family</label>
-                                    <input type="text" id="family" name="family" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="genus">Genus</label>
-                                    <input type="text" id="genus" name="genus" required>
-                                </div>
+                            <div class="form-group">
+                                <label for="scientificName">Scientific Name</label>
+                                <input type="text" id="scientificName" name="scientificName" required>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="location">Collection Location</label>
-                                    <input type="text" id="location" name="location" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="date">Date Collected</label>
-                                    <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="family">Family</label>
+                                <select name="family" id="family">
+                                    <option value="Dipterocarpaceae">Dipterocarpaceae</option>
+                                    <option value="Lauraceae">Lauraceae</option>
+                                    <option value="Burseraceae">Burseraceae</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="genus">Genus</label>
+                                <select name="genus" id="genus">
+                                    <option value="Vatica">Vatica</option>
+                                    <option value="Dipterocarpus">Dipterocarpus</option>
+                                    <option value="Hopea">Hopea</option>
+                                    <option value="Actinodaphne">Actinodaphne</option>
+                                    <option value="Endiandra">Endiandra</option>
+                                    <option value="Beilschmiedia">Beilschmiedia</option>
+                                    <option value="Canarium">Canarium</option>
+                                    <option value="Dacryodes">Dacryodes</option>
+                                    <option value="Santiria">Santiria</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p>Collection Location</p>
+                                <div class="radio-group">
+                                    <input type="radio" id="eastmalaysia" name="location" value="east_malaysia">
+                                    <label for="eastmalaysia">East Malaysia</label>
+                                    <input type="radio" id="westmalaysia" name="location" value="west_malaysia">
+                                    <label for="westmalaysia">West Malaysia</label>
+                                    <input type="radio" id="other" name="location" value="other">
+                                    <label for="other">Other country</label>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="description">Plant Description</label>
-                                <textarea id="description" name="description" rows="4" required></textarea>
+                                <label for="date">Date Collected</label>
+                                <input type="date" id="date" name="date" required>
                             </div>
-                            <div class="form-group">
-                                <label for="image">Upload Image</label>
-                                <input type="file" id="image" name="image" accept="images/*" required>
-                                <input type="file" id="image" name="image" accept="images/*" required>
-                                <p class="upload-instructions">
-                                    Please upload a clear, high-resolution image of the plant. 
-                                    Accepted formats: JPG, PNG, GIF. Maximum file size: 5MB.
-                                </p>
-                            </div>
-                            <button type="submit" class="submit-button">Submit Contribution</button>
-                        </form>
-                    </section>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Plant Description</label>
+                            <textarea id="description" name="description" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="image1">Upload Image 1</label>
+                            <input type="file" id="image1" name="image1" accept="image/*" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="image2">Upload Image 2</label>
+                            <input type="file" id="image2" name="image2" accept="image/*" required>
+                        </div>
+                        <p class="upload-instructions">
+                            Please upload clear, high-resolution images of the plant. 
+                            Accepted formats: JPG, PNG, GIF. Maximum file size: 5MB per image.
+                        </p>
+                        <button type="submit" class="submit-button">Submit Contribution</button>
+                    </form>
                 </section>
             </div>
-
+        </div>
             <footer>
                 <section class="ft-main">
                     <div class="ft-main-item">
@@ -134,12 +157,15 @@
                     <div class="ft-main-item">
                         <h2 class="ft-title">About Us</h2>
                         <ul>
-                            <li><a href="porfile.html">The Team</a></li>
-                            <li><a href="main.html#about_us">Our Vision</a></li>
+                            <li><a href="main.html#team">The Team</a></li>
+                            <li><a href="mailto:104386364@students.swinburne.edu.my">Contact us</a></li>
+                            <li><a href="https://github.com/Miyuki32/herbaria-webstie">Our Github</li>
                         </ul>
                     </div>
                 </section>
-                <p class="ft-copy">&copy; 2024 DaFwiedPotato. All rights reserved.</p>
+                <p class="ft-copy">
+                    &copy; 2024 DaFwiedPotato. All rights reserved.
+                </p>
             </footer>
             <a href="#top" class="top_button">
                 <figure>

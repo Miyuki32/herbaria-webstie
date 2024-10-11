@@ -67,7 +67,7 @@ body {
     transition: transform 0.3s ease;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    border: 5px solid #006d6d;
+    border: 20px groove #006d6d;
     padding: 20px;
 }
 

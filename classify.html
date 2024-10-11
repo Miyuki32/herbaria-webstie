@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Classification</title>
+        <title>Herbarium</title>
         <link rel="stylesheet" href="./style/style.css">
         <link rel="stylesheet" href="./style/enhancement.css">
         <link rel="stylesheet" href="./style/media.css">
@@ -14,7 +14,8 @@
             <div class="logo">
                 <a href="main.html"><img src="./style/images/logo.png" alt="Logo"></a>
             </div>
-            <label class="menu-icon" for="menu-toggle">&#9776;</label>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <nav class="navbar">
                 <ul>
                     <li><a href="classify.html">Classification</a></li>
@@ -38,7 +39,7 @@
                 <p>Your guide to understanding the beauty and diversity of plants of different families.</p>
             </div>
         </section>
-        <div class="divider">
+        <div class="class_divider">
             <h1>What is family, genus and species?</h1>
         </div>
         <div class="content_con">
@@ -48,7 +49,7 @@
             <div class="class_def">
                 <div class="family_box">
                     <h3>According to <a href="https://www.biologyonline.com/dictionary/family">Biology Online</a>, there's a few meanings for family:</h3>
-                    <div><br></div><div><br></div>
+                    <br><br>
                     <div class="class_textarea">
                         <ul>
                             <li>A taxonomic rank in the classification of organisms between genus and order.</li>
@@ -94,7 +95,7 @@
             <div class="class_def">
                 <div class="species_box">
                     <h3>According to <a href="https://biologydictionary.net/species/">Biology Dictionary</a>, genus means:</h3>
-                    <div><br></div>
+                    <br>
                     <div class="class_textarea">
                         <ul>
                             <li>Species are organisms with similar genetics, capable of interbreeding and producing fertile offspring.</li>
@@ -106,12 +107,12 @@
                 </div>
                 <figure class="def_image_species">
                     <img src="./style/images/species-removebg-preview.png" alt="species" id="species_img">
-                    <figcaption>Image of Classification scheme. From <a href="https://www.thulasidas.com/reductionism/">Unreal Blog</a>.</figcaption>
+                    <figcaption>Image of Genus. From <a href="https://biologydictionary.net/species/">Biology Dictionary</a>.</figcaption>
                 </figure>
             </div>
         </div>
-        <div class="divider">
-            <h1 id="examples">Examples:</h1>
+        <div class="class_divider">
+            <h1>Examples:</h1>
         </div>
         <div class="content_con">
             <section class="class_border">
@@ -244,20 +245,23 @@
                 <div class="ft-main-item">
                     <h2 class="ft-title"><a href="identify.html">Identify</a></h2>
                     <ul>
-                        <li><a href="identify.html#family">Family</a></li>
-                        <li><a href="identify.html#genus">Genus</a></li>
-                        <li><a href="identify.html#species">Species</a></li>
+                        <li><a href="classify.html#family">Family</a></li>
+                        <li><a href="classify.html#genus">Genus</a></li>
+                        <li><a href="classify.html#species">Species</a></li>
                     </ul>
                 </div>
                 <div class="ft-main-item">
                     <h2 class="ft-title">About Us</h2>
                     <ul>
-                        <li><a href="porfile.html">The Team</a></li>
-                        <li><a href="main.html#about_us">Our Vision</a></li>
+                        <li><a href="main.html#team">The Team</a></li>
+                        <li><a href="mailto:104386364@students.swinburne.edu.my">Contact us</a></li>
+                        <li><a href="https://github.com/Miyuki32/herbaria-webstie">Our Github</li>
                     </ul>
                 </div>
             </section>
-            <p class="ft-copy">&copy; 2024 DaFwiedPotato. All rights reserved.</p>
+            <p class="ft-copy">
+                &copy; 2024 DaFwiedPotato. All rights reserved.
+            </p>
         </footer>
         <a href="#top" class="top_button">
             <figure>

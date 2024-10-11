@@ -1,299 +1,299 @@
 /* Zoom box and floating box in main.html */ 
 .zoom_box {
-    width: 350px;
-    height: 220px;
-    background: #FAF3E0; /* Slightly richer off-white */
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    margin: 20px; /* Reduced margin for better alignment */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added shadow for stand-out effect */
-  }
-  
-  .box_container .zoom_box:hover .mbox_front {
-    top: 20px;
-    left: calc(50% - 50px);
-    width: 100px;
-    border-radius: 50%;
-  }
+  width: 350px;
+  height: 220px;
+  background: #FAF3E0; /* Slightly richer off-white */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 20px; /* Reduced margin for better alignment */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Added shadow for stand-out effect */
+}
 
-  .box_container .zoom_box .mbox_front {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    z-index: 1;
-    border-radius: 20px;
-  }
+.box_container .zoom_box:hover .mbox_front {
+  top: 20px;
+  left: calc(50% - 50px);
+  width: 100px;
+  border-radius: 50%;
+}
 
-  .box_container .zoom_box:hover .mbox_front img {
-    border-radius: 20px;
-  }
-  
-  .zoom_box_content {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-family: Poppins;
-    margin-top: 90px;
-  }
+.box_container .zoom_box .mbox_front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 1;
+  border-radius: 20px;
+}
 
-  .zoom_box_content h3 {
-    color: #4A3C31; /* Darker text color for better contrast */
-    font-size: 28px;
-    text-align: center;
-  }
+.box_container .zoom_box:hover .mbox_front img {
+  border-radius: 20px;
+}
+
+.zoom_box_content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: Poppins;
+  margin-top: 90px;
+}
+
+.zoom_box_content h3 {
+  color: #4A3C31; /* Darker text color for better contrast */
+  font-size: 28px;
+  text-align: center;
+}
 
 .main_box, .zoom_box {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
 }
 
 .main_box:hover, .zoom_box:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
 
 /* Fade imgaes in classify.html */
 .fade_container {
-    position: relative;
-    width: 30%;
-    height: 100%;
-    margin-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .fade_image {
-    display: block;
-    width: 100%;
-    border-radius: 20px;
-  }
-  
-  .fade_overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 96%;
-    opacity: 0;
-    transition: .5s ease;
-    border-radius: 20px;
-    background-color: #2b4b2f;
-  }
-  
-  .fade_container:hover .fade_overlay {
-    opacity: 1;
-  }
-  
-  .fade_text a{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-decoration: none;
-  }
-  
+  position: relative;
+  width: 30%;
+  height: 100%;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.fade_image {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.fade_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 96%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 20px;
+  background-color: #2b4b2f;
+}
+
+.fade_container:hover .fade_overlay {
+  opacity: 1;
+}
+
+.fade_text a{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
 
 /* return to top button */
 .top_button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  text-decoration: none;
-  background: transparent;
-  width: 40px; /* Default button size */
-  height: 40px;
-  z-index: 1000;
-  opacity: 0.4; /* Partially transparent at first */
-  transition: all 0.3s ease;
-  cursor: pointer; /* Pointer cursor for better interaction */
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+text-decoration: none;
+background: transparent;
+width: 40px; /* Default button size */
+height: 40px;
+z-index: 1000;
+opacity: 0.4; /* Partially transparent at first */
+transition: all 0.3s ease;
+cursor: pointer; /* Pointer cursor for better interaction */
 }
 
 /* Styling for the leaf image */
 .leaf_image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
+width: 100%;
+height: 100%;
+object-fit: contain;
+transition: transform 0.3s ease;
 }
 
 /* Figcaption text hidden by default */
 .top_button .text {
-  position: absolute;
-  white-space: nowrap;
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  background-color: #4CAF50;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 14px;
-  pointer-events: none;
-  transform: translateY(0) translateX(-75%);
-  bottom: 100%;
-  left: 50%;
-  margin-bottom: 10px;
+position: absolute;
+white-space: nowrap;
+opacity: 0; /* Hidden by default */
+transition: opacity 0.3s ease, transform 0.3s ease;
+background-color: #4CAF50;
+color: white;
+padding: 5px 10px;
+border-radius: 20px;
+font-size: 14px;
+pointer-events: none;
+transform: translateY(0) translateX(-75%);
+bottom: 100%;
+left: 50%;
+margin-bottom: 10px;
 }
 
 /* Hover state for the button */
 .top_button:hover {
-  width: 55px; /* Slightly larger on hover */
-  height: 55px;
-  opacity: 1; /* Fully visible on hover */
+width: 55px; /* Slightly larger on hover */
+height: 55px;
+opacity: 1; /* Fully visible on hover */
 }
 
 /* More subtle zoom on the leaf image */
 .top_button:hover .leaf_image {
-  transform: scale(1.05); /* Slight zoom on hover */
+transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Showing the text on hover */
 .top_button:hover .text {
-  opacity: 1; /* Text becomes visible */
-  transform: translateY(-5px) translateX(-75%);
+opacity: 1; /* Text becomes visible */
+transform: translateY(-5px) translateX(-75%);
 }
 
 
 /* Genus box aside conten */
 .slide_panel {
-  position: absolute;
-  top: 50%;
-  right: -30vw;
-  width: 30vw;
-  height: 150px;
-  background-color: #F0EAD6;
-  transition: right 0.3s ease-out;
-  border: 3px solid #4a5568;
-  border-radius: 10px;
-  border-right: none;
-  box-sizing: border-box;
-  transform: translateY(-50%);
+position: absolute;
+top: 50%;
+right: -30vw;
+width: 30vw;
+height: 150px;
+background-color: #F0EAD6;
+transition: right 0.3s ease-out;
+border: 3px solid #4a5568;
+border-radius: 10px;
+border-right: none;
+box-sizing: border-box;
+transform: translateY(-50%);
 }
 
 .slide_trigger {
-  position: absolute;
-  top: 50%;
-  left: -22px;
-  width: 20px;
-  height: 60px;
-  background-color: #4a5568;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 5px 0 0 5px;
-  transform: translateY(-50%);
+position: absolute;
+top: 50%;
+left: -22px;
+width: 20px;
+height: 60px;
+background-color: #4a5568;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+border-radius: 5px 0 0 5px;
+transform: translateY(-50%);
 }
 
 .slide_content {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  text-align: center;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 15px;
+text-align: center;
 }
 
 .slide_panel:hover,
 .slide_trigger:hover + .slide_panel {
-  right: 0;
+right: 0;
 }
 
 /* flip card */
 /* tutorial start*/
-  
+
 .flip_box_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the items horizontally */
-  gap: 20px; /* Increased space between each box */
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center; /* Center the items horizontally */
+gap: 20px; /* Increased space between each box */
+width: 80%;
+margin-left: auto;
+margin-right: auto;
 }
 
 .class_flip {
-  background-color: transparent;
-  width: 350px;
-  height: 400px;
-  padding-top: 20px;
-  margin-bottom: 10px;
+background-color: transparent;
+width: 350px;
+height: 400px;
+padding-top: 20px;
+margin-bottom: 10px;
 }
 
 /* This container is needed to position the front and back side */
 .class_flip_inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .class_flip:hover .class_flip_inner {
-  transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
 .class_flip_front, .class_flip_back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  box-shadow: 6px 6px 6px 0px gray;
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+box-shadow: 6px 6px 6px 0px gray;
 }
 
 .content p{
-  padding-top: 30px;
+padding-top: 30px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .class_flip_front{
-  background-color: #3B5E3A;
-  color: white;
-  border-radius: 15px 50px;
+background-color: #3B5E3A;
+color: white;
+border-radius: 15px 50px;
 }
 
 /* Style the back side */
 .class_flip_back {
-  background-color: #3B5E3A;
-  color: white;
-  transform: rotateY(180deg);
-  border-radius: 15px 50px;
-  padding: 20px;
+background-color: #3B5E3A;
+color: white;
+transform: rotateY(180deg);
+border-radius: 15px 50px;
+padding: 20px;
 }
 
 .class_flip_back h3{
-  padding: 10px;
+padding: 10px;
 }
 
 .class_flip_back h3, p{
-  color: white;
+color: white;
 }
 
 .class_flip_front img{
-  width: 100%;
-  height: 100%;
-  border-radius: 15px 50px 0px 0px;
+width: 100%;
+height: 100%;
+border-radius: 15px 50px 0px 0px;
 }
 
 /* The end of Flip Cards */
@@ -302,5 +302,19 @@
 #morning_flower1:hover,
 #morning_flower2:hover,
 #morning_flower3:hover{
-  transform: translateY(-5px);
+transform: translateY(-5px);
 }
+
+/* Hide the content by default */
+.hide_content {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .hide_content {
+  display: block;
+}
+

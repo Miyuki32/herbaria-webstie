@@ -1,5 +1,5 @@
 body {
-    background: url('./images/placeholder_profile.jpg') no-repeat center center fixed;
+    background: url('./images/kyoto.webp') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -9,11 +9,11 @@ body {
     width: 80%;
     background-image: repeating-linear-gradient(
         145deg,
-        #f2c7e4 0%,  /* Slightly darker light teal */
+        #f4e8c1 0%,  /* Soft light yellow */
         #ffffff 25%, /* White */
-        #e67ce8 50%, /* Slightly darker medium teal */
+        #f0c27b 50%, /* Medium warm yellow */
         #ffffff 75%, /* White */
-        #f5a8f4 100% /* Slightly darker light teal */
+        #e89742 100% /* Darker orange */
     );
     background-size: 400% 400%;
     animation: waveAnimation 15s linear infinite;
@@ -36,7 +36,7 @@ body {
 
 /* Adjust text color to maintain readability */
 .profile_name, .profile_id, .profile_description {
-    color: #6b006d; /* Original teal color for text */
+    color: #b45f06; /* Dark brown-orange for text */
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow for readability */
 }
 
@@ -56,9 +56,9 @@ body {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-/* Profile Text Styling with Teal Color */
+/* Profile Text Styling with Warm Color */
 .profile_name, .profile_id, .profile_description {
-    color: #66006d; /* Teal */
+    color: #a0522d; /* Saddle brown */
     font-weight: 600;
     font-size: 25px;
     text-align: center;
@@ -79,32 +79,32 @@ body {
     width: 70%;
     overflow: hidden;
     border-radius: 12px;
-    border: 3px solid #940099; /* Teal Border */
+    border: 3px solid #d2691e; /* Dark orange Border */
     animation: glowBorder 1.5s infinite alternate; /* Constant glowing effect */
 }
 
 /* Glowing Border Keyframes */
 @keyframes glowBorder {
     from {
-        box-shadow: 0 0 10px #820099, 0 0 20px #820099, 0 0 20px #820099;
+        box-shadow: 0 0 10px #ff7518, 0 0 20px #ff7518, 0 0 20px #ff7518;
     }
     to {
-        box-shadow: 0 0 20px #c500cc, 0 0 40px #c500cc, 0 0 30px #c500cc;
+        box-shadow: 0 0 20px #ffa07a, 0 0 40px #ffa07a, 0 0 30px #ffa07a;
     }
 }
 
-/* Table Header and Cell Styling with Less Brightness */
+/* Table Header and Cell Styling */
 th {
     color: white;
-    background-color: #850099;
+    background-color: #ff7518;
     font-family: "Merriweather", sans-serif;
     font-size: 22px;
     padding: 15px;
 }
 
 td {
-    color: #6d0064; /* Teal Text */
-    background-color: #d4edeb; /* Softer color for the table background */
+    color: #8b4513; /* Saddle brown */
+    background-color: #f5deb3; /* Lighter wheat color for the table background */
     padding: 20px;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
@@ -129,12 +129,12 @@ td {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Centered Email Button with Teal Color and Hover Glow */
+/* Centered Email Button with Warm Color and Hover Glow */
 .email_button {
     font-family: Poppins, sans-serif;
     display: inline-block;
     margin: 20px auto;
-    background-color: #79006b;
+    background-color: #b45f06;
     border-radius: 8px;
     padding: 0.8rem 1.2rem;
     color: #fff;
@@ -146,5 +146,5 @@ td {
 
 .email_button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 8px 4px rgba(109, 0, 103, 0.5);
+    box-shadow: 0 0 8px 4px rgba(180, 95, 6, 0.5);
 }
