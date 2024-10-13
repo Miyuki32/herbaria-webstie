@@ -15,8 +15,7 @@
             <div class="logo">
                 <a href="index.html"><img src="./images/logo.png" alt="Logo"></a>
             </div>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <label class="menu-icon" for="menu-toggle">&#9776;</label>
             <nav class="navbar">
                 <ul>
                     <li><a href="classify.html">Classification</a></li>
@@ -34,7 +33,7 @@
                 </ul>
             </nav>
         </header>
-        <section class="hero">
+        <section class="hero" id="tools_hero">
             <div class="hero-text">
                 <h1>Welcome to the tools</h1>
                 <p>Your guide to understanding on the tools being used to create your own herbarium specimens.</p>
@@ -44,103 +43,34 @@
             <h1>What are the tools required?</h1>
         </div>
         <div class="content_con">
-            <div class="tools_def">
-                <div class="family_box">
-                    <h3>According to <a href="tutorial.html">The tutorial</a>, there are 5 stages to preparing herbarium specimens.</h3>
-                    <br><br>
-                    <div class="class_textarea">
-                        <ul>
-                            <li>Collecting</li>
-                            <li>Describing</li>
-                            <li>Pressing</li>
-                            <li>Mounting</li>
-                            <li>Storage</li>
-                        </ul>
-                    </div>
-                </div>
-                <figure class="tool_stages_figure">
-                    <img src="./images/stages.jpg" alt="Stages" id="stages">
-                    <figcaption>Image of all the stages</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="class_divider">
-            <h1>The Tools According to the Stages</h1>
-        </div>
-        <div class="content_con">
-            <section class="class_border">
+            <section class="tool_border">
                 <h2>Collecting</h2>
             </section>
-            <div class="tools_def">
-                <div class="family_box">
-                    <h3>There's a list of tools required</h3>
-                    <div class="class_textarea">
-                        <ul>
-                            <li>Plastic bags
-                                <ul>
-                                    <li>Place  collected specimens into plastic bag</li>
-                                </ul>
-                            </li>
-
-                            <li>Tape measure
-                                <ul>
-                                    <li>Used to measure the specimen according to desired size</li>
-                                </ul>
-                            </li>
-
-                            <li>Secateurs
-                                <ul>
-                                    <li>Used to careful and meticulous cuts for the specimen</li>
-                                </ul>
-                            </li>
-
-                            <li>Labels/sticky notes
-                                <ul>
-                                    <li>To take down notes</li>
-                                </ul>
-                            </li>
-
-                            <li>Pens/pencils
-                                <ul>
-                                    <li>The write down the notes</li>
-                                </ul>
-                            </li>
-
-                            <li>Camera
-                                <ul>
-                                    <li>Take pictures of the specimens</li>
-                                </ul>
-                            </li>
-                        </ul>    
-                    </div>
+            <div class="tools_section" id="field_tools">
+                <h2>Collection Tools</h2>
+                <div class="tools_item3">
+                    <img  class="tools_item_img3" src="./images/secateurs.jpeg" alt="secateurs">
+                    <h3>Secateurs</h3>
+                    <p>Secateurs feature sharp blades that make clean cuts on stems, branches, and flowers, promoting healthy growth and preventing damage to plants. Available in various types—such as bypass, anvil, and ratchet—secateurs are chosen based on the specific tasks at hand. Regular maintenance, including sharpening blades and cleaning, is crucial for optimal performance.</p>
                 </div>
-                <figure>
-                    <img class="tools_img" src="./images/secateurs.jpeg" alt="secateurs">
-                    <figcaption class="tools_cap">Person using secateurs to cut branches</figcaption>
-                </figure>
+                <div class="tools_item">
+                    <img  class="tools_item_img" src="./images/measure.jpg" alt="measure">
+                    <h3>Measuring tape</h3>
+                    <p>Measuring tape is an essential tool for gardeners and landscapers, used for accurately measuring distances, plant spacing, and garden bed dimensions. Typically made of flexible, durable materials, measuring tapes come in various lengths and widths, allowing for easy handling in tight spaces or over long distances. Accurate measurements are crucial for planning layouts, ensuring proper spacing for healthy plant growth, and achieving desired aesthetics.</p>
+                </div>
             </div>
         </div>
         <div class="content_con">
-            <section class="class_border">
+            <section class="tool_border">
                 <h2>Describing</h2>
             </section>
-            <div class="tools_def">
-                <div class="family_box">
-                    <h3>There's a list of tools required</h3>
-                    <div class="class_textarea">
-                        <ul>
-                            <li>RHS Colour Chart
-                                <ul>
-                                    <li>Compare and contrast with the colours of the specimen</li>
-                                </ul>
-                            </li>
-                        </ul>    
-                    </div>
+            <div class="tools_section" id="lab_tools">
+                <h2>Tools for describing</h2>
+                <div class="tools_item3">
+                    <img  class="tools_item_img3" src="./images/color.jpg" alt="color">
+                    <h3>RHS Colour Chart</h3>
+                    <p>RHS Colour Charts are essential tools in herbarium studies, providing standardized color references that aid in the accurate identification and documentation of plant specimens. By recording the closest RHS color code alongside specimen details on labels, researchers can preserve important color information, even as specimens fade over time. This integration enhances the usability of herbarium collections, facilitating better communication and research in botany and plant conservation.</p>
                 </div>
-                <figure>
-                    <img class="tools_img" src="./images/color.jpg" alt="color">
-                    <figcaption class="tools_cap">Comparing colors with a flower</figcaption>
-                </figure>
             </div>
         </div>
 
@@ -149,137 +79,103 @@
                 <h2>Pressing</h2>
             </section>
             <div class="tools_def">
-                <div class="family_box">
-                    <h3>There's a list of tools required</h3>
-                    <div class="class_textarea">
-                        <ul>
-                            <li>Two pieces of hardboard/plywood measuring approximately 40 x 30cm (16 x 12in)
-                                <ul>
-                                    <li>To sandwich the specimen</li>
-                                </ul>
-                            </li>
-
-                            <li>Sheets of blotting paper
-                                <ul>
-                                    <li>To absorb excess water from the specimen</li>
-                                </ul>
-                            </li>
-
-                            <li>Sheets of corrugated card
-                                <ul>
-                                    <li>To absorb shock from accidents such as dropping the specimen and to reduce damage</li>
-                                </ul>
-                            </li>
-
-                            <li>Foam sheet
-                                <ul>
-                                    <li>To prevent sticking of the layers</li>
-                                </ul>
-                            </li>
-                            
-                            <li>Bricks/telephone directories/weighty books/straps
-                                <ul>
-                                    <li>To weigh down the whole press</li>
-                                </ul>
-                            </li>
-                        </ul>    
-                    </div>
-                </div>
                 <figure>
                     <img class="tools_img_2" src="./images/wood.jpg" alt="wood">
                     <figcaption class="tools_cap_2">Wood that is used for pressing</figcaption>
                 </figure>
+                <div class="tools_item2">
+                    <h3>Main tools</h3>
+                    <ul class="tools_list">
+                        <li class="tools_list_item">Two pieces of hardboard/plywood measuring approximately 40 x 30cm (16 x 12in)</li>
+                        <li class="tools_list_item">Sheets of blotting paper</li>
+                    </ul>
+
+                    <h3>Additional Equipment</h3>
+                <ul class="tools_list">
+                    <li class="tools_list_item">Sheets of corrugated card</li>
+                    <li class="tools_list_item">Foam sheet</li>
+                    <li class="tools_list_item">Bricks/telephone directories/weighty books/straps</li>
+                </ul>
+                </div>
             </div>
         </div>
 
         <div class="content_con">
-            <section class="class_border">
+            <section class="tool_border">
                 <h2>Mounting</h2>
             </section>
+            
             <div class="tools_def">
-                <div class="family_box">
-                    <h3>There's a list of tools required</h3>
-                    <div class="class_textarea">
-                        <ul>
-                            <li>Acid-free paper measuring 42 x 26.5cm/ A3
-                                <ul>
-                                    <li>Acts as a place to place the specimen</li>
-                                </ul>
-                            </li>
-
-
-                            <li>Labels, preferably acid-free
-                                <ul>
-                                    <li>To label the specimen</li>
-                                </ul>
-                            </li>
-
-                            <li>Tweezers
-                                <ul>
-                                    <li>To precisely place the plant</li>
-                                </ul>
-                            </li>
-
-                            <li>Scissors
-                                <ul>
-                                    <li>To cut any excess specimen</li>
-                                </ul>
-                            </li>
-
-                            <li>Neutral-pH PVA adhesive
-                                <ul>
-                                    <li>To glue the specimen onto the paper</li>
-                                </ul>
-                            </li>
-
-                            <li>Neutral-pH adhesive, gummed linen hanging tape
-                                <ul>
-                                    <li>To stick the specimen onto the paper</li>
-                                </ul>
-                            </li>
-                        </ul>    
-                    </div>
+                <div class="tools_section2">
+                    <h3>The tools required for mounting are as followed :</h3>
+                    <ul>
+                        <li>Acid-free paper measuring 42 x 26.5cm/ A3</li>
+                        <li>Labels, preferably acid-free</li>
+                        <li>Tweezers</li>
+                        <li>Neutral-pH PVA adhesive</li>
+                        <li>Neutral-pH adhesive, gummed linen hanging tape</li>
+                    </ul>
                 </div>
-                <figure>
-                    <img class="tools_img" src="./images/glue.jpg" alt="glue">
-                    <figcaption class="tools_cap">Glue used for sticking the specimen</figcaption>
+                <figure class="tools_figure">
+                    <img class="tools_figure_img" src="./images/glue.jpg" alt="glue">
+                    <figcaption class="tutorial_figcaption">Glue used for sticking the specimen</figcaption>
                 </figure>
             </div>
         </div>
 
         <div class="content_con">
-            <section class="class_border">
+            <section class="tool_border">
                 <h2>Storage</h2>
             </section>
             <div class="tools_def">
-                <div class="family_box">
-                    <h3>There's a list of tools required</h3>
-                    <div class="class_textarea">
-                        <ul>
-                            <li>Plastic bags
-                                <ul>
-                                    <li>To store the specimen</li>
-                                </ul>
-                            </li>
-
-                            <li>Freezer
-                                <ul>
-                                    <li>To freeze the specimen and to kill any pest</li>
-                                </ul>
-                            </li>
-
-                            <li>Boxes
-                                <ul>
-                                    <li>To store the final specimen</li>
-                                </ul>
-                            </li>
-                        </ul>    
+                <div class="tools_section">
+                    <h3>Types of Storage</h3>
+                    <p class="storage_description">A good storage is crucial for a good herbarium as the specimens will be kept for many years. However, the storage types that are often used depends on personal preference and budget. Here are the most common storage types and their advantages :</p>
+                    <div class="flip_box_container">
+                        <div class="class_flip">
+                            <div class="class_flip_inner">
+                              <div class="class_flip_front">
+                                    <div class="content">
+                                        <img src="./images/bag.jpg" alt="bag">
+                                        <p>Plastic bags</p>
+                                    </div>
+                              </div>
+                                <div class="class_flip_back">
+                                    <h3>Advantages</h3>
+                                    <p>Having the lowest cost, plastic bags can be used as temporary storage for the specimens.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="class_flip">
+                            <div class="class_flip_inner">
+                              <div class="class_flip_front">
+                                <div class="content">
+                                    <img src="./images/freezer.jpg" alt="freezer">
+                                    <p>Freezer</p>
+                                </div>
+                              </div>
+                                <div class="class_flip_back">
+                                    <h3>Advantages</h3>
+                                    <p>Freezers are a sure fire way of keeping the specimens safe and secure. Specimens kept in freezers can be kept for a very long time as little damage can be done to the specimen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="class_flip">
+                            <div class="class_flip_inner">
+                              <div class="class_flip_front">
+                                <div class="content">
+                                    <img src="./images/box.jpg" alt="box">
+                                    <p>Boxes</p>
+                                </div>
+                              </div>
+                                <div class="class_flip_back">
+                                    <h3>Advantages</h3>
+                                    <p>Boxes can minimize the exposure of sunlight, water vapour and others to the specimens.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <figure>
-                    <img class="tools_img" src="./images/box.jpg" alt="box">
-                    <figcaption class="tools_cap">Box used to store the specimen</figcaption>
-                </figure>
             </div>
         </div>
         <footer>
@@ -319,21 +215,16 @@
                 <div class="ft-main-item">
                     <h2 class="ft-title">About Us</h2>
                     <ul>
-                        <li><a href="index.html#team">The Team</a></li>
-                        <li><a href="mailto:104386364@students.swinburne.edu.my">Contact us</a></li>
-                        <li><a href="https://github.com/Miyuki32/herbaria-webstie">Our Github</li>
+                        <li><a href="porfile.html">The Team</a></li>
+                        <li><a href="index.html#about_us">Our Vision</a></li>
                     </ul>
                 </div>
             </section>
-            <p class="ft-copy">
-                &copy; 2024 DaFwiedPotato. All rights reserved.
-            </p>
+            <p class="ft-copy">&copy; 2024 DaFwiedPotato. All rights reserved.</p>
         </footer>
         <a href="#top" class="top_button">
-            <figure>
-            <img src="./images/leaf.png" alt="Leaf" class="leaf_image">
-            <figcaption class="text">Back to Top</figcaption>
-            </figure>
+            <img src="./images/leaf.png" alt="Back to top" class="leaf_image">
+            <span class="text">Back to top</span>
         </a>
     </body>
 </html>
