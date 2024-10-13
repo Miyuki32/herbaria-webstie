@@ -1198,8 +1198,16 @@ padding-left: 30px;
 margin-left: 15%;
 }
 
+.def_image_leaf figcaption {
+  color: #4A3C31;
+}
+
 .def_image_tools {
 margin-left: 25px;
+}
+
+.def_image_tools figcaption {
+  color: #4A3C31;
 }
 
 .identify_class_def {
@@ -1262,10 +1270,12 @@ background-color: #F0EAD6;
 .identify_table th {
 text-align: right;
 padding: 20px;
+color: black;
 }
 
 .identify_table td {
 padding: 20px;
+color: black;
 }
 
 .close_button img{
@@ -2290,6 +2300,300 @@ transform: translateY(-5px);
 
 #toggle:checked + .hide_content {
   display: block;
+}
+
+
+/* navbar media */
+/* Small screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .menu-icon {
+      display: block; /* Show menu icon on smaller screens */
+      cursor: pointer;
+  }
+
+  .navbar {
+      display: none; /* Hide navbar links initially */
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #2b4b2f;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 15;
+      flex-direction: column;
+      width: 200px; /* Adjust as needed */
+  }
+
+  .menu-toggle:checked ~ .navbar {
+      display: flex; /* Show navbar when checkbox is checked */
+  }
+
+  .navbar ul {
+      flex-direction: column; /* Stack items vertically */
+      align-items: stretch;
+  }
+
+  .navbar ul li {
+      margin-bottom: 10px;
+  }
+
+  .dropdown-nav {
+      position: static;
+      display: none;
+      width: 100%;
+  }
+
+  .dropdown:hover .dropdown-nav {
+      display: block;
+  }
+}
+
+@media (min-width: 601px) {
+  .menu-icon {
+      display: none; /* Hide menu icon on larger screens */
+  }
+
+  .navbar {
+      display: flex; /* Always show navbar on larger screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-icon {
+      display: none; /* Hide toggle button on larger screens */
+  }
+
+  .navbar {
+      display: block; /* Show navbar on larger screens */
+      position: static; /* Reset position */
+      background: none;
+      padding: 0;
+  }
+
+  .navbar ul {
+      flex-direction: row; /* Horizontal menu on larger screens */
+      gap: 20px;
+  }
+
+  .hero-text h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-text p {
+      font-size: 1.5rem;
+  }
+
+  .product-categories {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 800px;
+      gap: 20px;
+  }
+
+  .content_con {
+      padding: 40px;
+      height: auto;
+  }
+
+  .box_container {
+      gap: 20px;
+  }
+
+  .navbar {
+      display: flex; /* Show navbar links */
+      flex-direction: row; /* Align items horizontally */
+  }
+
+  .navbar input[type="text"] {
+      display: block;
+  }
+}
+
+
+/* Main page */
+@media (max-width: 700px) {
+  .main_box {
+      width: 350px;
+      height: 300px;
+  }
+
+  .box_content p {
+      font-size: 12px;
+  }
+
+  .box_content h3 {
+      font-size: 15px;
+  }
+
+  .box_content .button {
+      width: 200px;
+      font-size: 15px;
+      height: 45px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .box_container .main_box:hover .mbox_front {
+      width: 100px;
+      top: 10px;
+  }
+
+  .zoom_box {
+    display: none;
+  }
+
+  .border, h2{
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive adjustments for forms */
+/* contribute page */
+@media screen and (max-width: 768px) {
+  .contribute-content {
+    padding: 10px;
+  }
+
+  .contribute-intro h1 {
+    font-size: 28px;
+  }
+
+  .contribute-intro p {
+    font-size: 16px;
+  }
+
+  .contribute-form-container {
+    padding: 20px;
+  }
+
+  .contribute-form-container h2 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .radio-group label {
+    margin-left: 5px;
+  }
+
+  .upload-instructions {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contribute-intro h1 {
+    font-size: 24px;
+  }
+
+  .contribute-intro p {
+    font-size: 14px;
+  }
+
+  .contribute-form-container h2 {
+    font-size: 20px;
+  }
+
+  .form-group label,
+  .form-group p {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .upload-instructions {
+    font-size: 12px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+  }
+}
+/* Enquiry page */
+@media (max-width: 768px) {
+  .enquiry-container {
+      padding: 20px;
+      margin: 20px;
+  }
+
+  .enquiry-container h1 {
+      font-size: 2rem;
+  }
+
+  fieldset {
+      padding: 10px;
+  }
+}
+
+/* Classify */
+@media screen and (max-width: 768px) {
+  .class_classification {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .class_classification img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block; /* Show the image directly */
+  }
+
+  .class_textarea {
+    width: 100%;
+  }
+
+  .class_textarea dl {
+    margin-top: 20px;
+  }
+
+  .class_textarea dt {
+    font-size: 18px;
+  }
+
+  .class_textarea dd {
+    font-size: 16px;
+  }
+
+  .class_border h2 {
+    font-size: 24px;
+  }
+
+  .class_divider h1 {
+    font-size: 28px;
+  }
 }
 
 
