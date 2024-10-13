@@ -13,7 +13,6 @@ body {
 font-family: 'Poppins', sans-serif;
 line-height: 1.6;
 font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
-color: #FFFFFF;
 }
 
 h1, h2, h3 {
