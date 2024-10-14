@@ -1500,6 +1500,12 @@ margin-bottom: 10px;
 
 
 /* Register page styles */
+.register-body{
+  background-image: url(./images/215595.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .register-container {
 max-width: 800px;
 margin: 40px auto;
