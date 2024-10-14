@@ -47,7 +47,7 @@ body {
     display: block;
     width: 200px;  /* Adjust to your preference */
     height: auto;  /* Maintain aspect ratio */
-    border-radius: 40%; /* Circular shape */
+    border-radius: 50%; /* Circular shape */
     transition: transform 0.3s ease;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover; /* Ensures the image covers the area without distortion */
