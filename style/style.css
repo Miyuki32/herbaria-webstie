@@ -1583,11 +1583,13 @@ text-decoration: underline;
 }
 /* Contribute Page Styles */
 
+#contribute_body {
+  background: url('./images/215595.gif') no-repeat center center fixed;
+  background-size: cover;
+}
 
 .bg_contribute {
   padding: 40px 0;
-  background: url('./images/215595.gif') no-repeat center center fixed;
-  background-size: cover;
 }
 
 .contribute-content {
