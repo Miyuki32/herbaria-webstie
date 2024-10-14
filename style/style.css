@@ -1,3 +1,11 @@
+/*
+filename: [Herbaria Style] 
+author: [Ivan Liang Jin Ngu, Neng Yi Chieng, Elijah Benjamin Tan, Jack]
+created: [10/09/2024]
+last modified: [14/10/24]
+description: [Styles for every single html files]
+*/
+
 /* General Reset */
 * {
   margin: 0;
@@ -1333,6 +1341,8 @@ footer {
   background-color: #3B5E3A;
   color: white;
   line-height: 1.5;
+  text-align: center;
+  font-style: italic;
 }
 
 footer a {
@@ -1351,7 +1361,6 @@ a:hover {
   padding-bottom: 10px;
 }
 
-/* Main footer styling */
 .ft-main {
   padding: 20px 30px;
   display: flex;
@@ -1363,7 +1372,6 @@ a:hover {
   min-width: 20px;
 }
 
-/* Legal section styling */
 .ft-legal {
   padding: 15px 30px;
   background-color: #333;
@@ -1382,10 +1390,8 @@ a:hover {
 
 .ft-copy{
   color: #ffffff;
-  text-align: center;
 }
 
-/* One before the last child */
 .ft-legal-list li:nth-last-child(2) {
   flex: 1;
 }
@@ -1774,34 +1780,34 @@ input[type="submit"]:hover {
 }
 
 .enquiry-container {
-max-width: 800px;
-margin: 40px auto;
-padding: 40px;
-background-color: rgba(240, 234, 214, 0.9); /* Slightly transparent background */
-border-radius: 10px;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: rgba(240, 234, 214, 0.9); /* Slightly transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .enquiry-container h1 {
-color: #3B5E3A;
-font-family: 'Poppins', serif;
-font-size: 2.6rem;
-margin-bottom: 30px;
-text-align: center;
+  color: #3B5E3A;
+  font-family: 'Poppins', serif;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 form {
-display: flex;
-flex-direction: column;
-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 label {
-font-family: 'Poppins', sans-serif;
-font-weight: 600;
-color: #4A3C31;
-margin-bottom: 5px;
-display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #4A3C31;
+  margin-bottom: 5px;
+  display: block;
 }
 
 input[type="text"],
@@ -1809,13 +1815,13 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-width: 100%;
-padding: 10px;
-border: 1px solid #ccc;
-border-radius: 5px;
-font-family: 'Poppins', sans-serif;
-font-size: 1rem;
-transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input[type="text"]:focus,
@@ -1823,93 +1829,93 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-border-color: #3B5E3A;
-box-shadow: 0 0 5px rgba(59, 94, 58, 0.5);
-outline: none;
+  border-color: #3B5E3A;
+  box-shadow: 0 0 5px rgba(59, 94, 58, 0.5);
+  outline: none;
 }
 
 fieldset {
-border: 2px solid #3B5E3A;
-border-radius: 5px;
-padding: 20px;
-margin-bottom: 20px;
+  border: 2px solid #3B5E3A;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 legend {
-font-family: 'Merriweather', serif;
-font-weight: 600;
-color: #3B5E3A;
-padding: 0 10px;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  color: #3B5E3A;
+  padding: 0 10px;
 }
 
 select {
-appearance: none;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%233B5E3A' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
-background-repeat: no-repeat;
-background-position: right 10px center;
-padding-right: 30px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%233B5E3A' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
 }
 
 input[type="submit"] {
-background-color: #3B5E3A;
-color: white;
-font-family: 'Poppins', sans-serif;
-font-size: 1.1rem;
-font-weight: 600;
-padding: 12px 24px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s, transform 0.3s;
-align-self: center;
+  background-color: #3B5E3A;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  align-self: center;
 }
 
 input[type="submit"]:hover {
-background-color: #5A8A3B;
-transform: translateY(-2px);
+  background-color: #5A8A3B;
+  transform: translateY(-2px);
 }
 
 input[type="submit"]:active {
-transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* Upload image in identify.hmlt */
 
 .upload_divider {
-background-color: #2c5234;
-padding: 30px 20px;
-position: relative;
-overflow: hidden;
+  background-color: #2c5234;
+  padding: 30px 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .upload_divider::before,
 .upload_divider::after {
-content: '🍃';
-position: absolute;
-font-size: 50px;
-pointer-events: none;
+  content: '🍃';
+  position: absolute;
+  font-size: 50px;
+  pointer-events: none;
 }
 
 .upload_divider::before {
-top: 10px;
-left: 5%;
-animation: float_left 10s ease-in-out infinite;
+  top: 10px;
+  left: 5%;
+  animation: float_left 10s ease-in-out infinite;
 }
 
 .upload_divider::after {
-bottom: 10px;
-right: 5%;
-animation: float_right 12s ease-in-out infinite;
+  bottom: 10px;
+  right: 5%;
+  animation: float_right 12s ease-in-out infinite;
 }
 
 @keyframes float_left {
-0%, 100% { transform: translate(0, 0) rotate(0deg); }
-50% { transform: translate(15px, -15px) rotate(10deg); }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(15px, -15px) rotate(10deg); }
 }
 
 @keyframes float_right {
-0%, 100% { transform: translate(0, 0) rotate(0deg); }
-50% { transform: translate(-15px, 15px) rotate(-10deg); }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-15px, 15px) rotate(-10deg); }
 
 }
 .upload_divider h1 {
@@ -2128,8 +2134,6 @@ background-color: #1e3a24;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   text-decoration: none;
@@ -2291,7 +2295,6 @@ transform: rotateY(180deg);
 position: absolute;
 width: 100%;
 height: 100%;
--webkit-backface-visibility: hidden; /* Safari */
 backface-visibility: hidden;
 box-shadow: 6px 6px 6px 0px gray;
 }
@@ -2352,6 +2355,691 @@ transform: translateY(-5px);
 
 #toggle:checked + .hide_content {
   display: block;
+}
+
+#ivan_profile_body {
+  background: url('./images/juani_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.ivan_profile_container {
+  margin: 50px auto;
+  display: block;
+  width: 80%;
+  background-image: repeating-linear-gradient(
+      145deg,
+      #c5f0f0 0%,  /* Slightly darker light teal */
+      #ffffff 25%, /* White */
+      #99e6e6 50%, /* Slightly darker medium teal */
+      #ffffff 75%, /* White */
+      #c5f0f0 100% /* Slightly darker light teal */
+  );
+  background-size: 400% 400%;
+  animation: waveAnimation 15s linear infinite;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* Diagonal Wave Gradient Animation Keyframes */
+@keyframes waveAnimation {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
+
+.ivan_profile_id {
+  font-family: 'Arial', 'sans-serif';
+  color: #006d6d;
+  font-size: 25px;
+}
+
+.ivan_profile_name {
+  font-size: 200%;
+  font-family: 'Poppins', 'sans-serif';
+  color: #006d6d;
+  font-weight: bold;
+}
+
+/* Profile Text Styling with Teal Color */
+.ivan_profile_description {
+  color: rgb(0, 109, 109); /* Teal */
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+}
+
+/* Profile Image with Center Alignment and Hover Animation */
+#ivan_profile_img {
+  margin: 30px auto;
+  display: block;
+  width: 200px;  /* Adjust to your preference */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular shape */
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border: 20px groove #006d6d;
+  padding: 20px;
+}
+
+#ivan_profile_img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+
+/* Profile Table Container Centered */
+.ivan_profile_table_container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Table Styling with Reduced Brightness */
+.ivan_profile_table {
+  margin: auto;
+  border-spacing: 0;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 3px solid #009999; /* Teal Border */
+  animation: ivanGlowBorder 1.5s infinite alternate; /* Constant glowing effect */
+}
+
+/* Glowing Border Keyframes */
+@keyframes ivanGlowBorder {
+  from {
+      box-shadow: 0 0 10px #009999, 0 0 20px #009999, 0 0 20px #009999;
+  }
+  to {
+      box-shadow: 0 0 20px #00cccc, 0 0 40px #00cccc, 0 0 30px #00cccc;
+  }
+}
+
+/* Table Header and Cell Styling with Less Brightness */
+.ivan_profile_table th {
+  color: white;
+  background-color: #009999;
+  font-family: "Merriweather", sans-serif;
+  font-size: 22px;
+  padding: 15px;
+}
+
+.ivan_profile_table td {
+  color: #006d6d; /* Teal Text */
+  background-color: #d4edeb; /* Softer color for the table background */
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ivan_profile_table td ul li {
+  text-align: left;
+  color: #006d6d;
+  margin-left: 1.5%;
+}
+
+#ivan_hobby {
+  text-align: left;
+}
+
+
+/* Fade-in Effect for Table Rows */
+.ivan_profile_table tr {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.ivan_profile_table tr:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.ivan_profile_table tr:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Centered Email Button with Teal Color and Hover Glow */
+.ivan_email_button {
+  font-family: Poppins, sans-serif;
+  display: inline-block;
+  margin: 20px auto;
+  background-color: #006d6d;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
+}
+
+.ivan_email_button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px 4px rgba(0, 109, 109, 0.5);
+}
+
+.jack_profile_body {
+  background: url('./images/215595.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.jack_profile_container {
+  margin: 50px auto;
+  display: block;
+  width: 80%;
+  background-image: repeating-linear-gradient(
+      145deg,
+      #e1bee7 0%,   /* Light Purple */
+      #ba68c8 25%,  /* Medium Purple */
+      #8e44ad 50%,  /* Standard Purple */
+      #ba68c8 75%,  /* Medium Purple */
+      #e1bee7 100%  /* Light Purple */
+  );
+  
+  background-size: 400% 400%;
+  animation: waveAnimation 15s linear infinite;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+
+/* Adjust text color to maintain readability */
+.jack_profile_name, .jack_profile_id, .jack_profile_description {
+  color: #9b59b6;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow for readability */
+}
+
+/* Profile Image with Center Alignment and Hover Animation */
+#jack_profile_img {
+  margin: 30px auto;
+  display: block;
+  width: 200px;  /* Adjust to your preference */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular shape */
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+#jack_profile_img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Profile Text Styling with Warm Color */
+.jack_profile_name, .jack_profile_id, .jack_profile_description {
+  color: #4b0082; /* Saddle brown */
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0;
+}
+
+/* Profile Table Container Centered */
+.jack_profile_table_container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Table Styling with Reduced Brightness */
+.jack_profile_table {
+  margin: auto;
+  border-spacing: 0;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 3px solid #4b0082; /* Dark orange Border */
+  animation: jackGlowBorder 1.5s infinite alternate; /* Constant glowing effect */
+}
+
+/* Glowing Border Keyframes */
+@keyframes jackGlowBorder {
+  from {
+      box-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6, 0 0 20px #9b59b6; /* Lighter Purple */
+  }
+  to {
+      box-shadow: 0 0 20px #8e44ad, 0 0 40px #8e44ad, 0 0 30px #8e44ad; /* Deeper Purple */
+  }
+}
+
+/* Table Header and Cell Styling */
+.jack_profile_table th {
+  color: white;
+  background-color: #8e44ad; /* Dark purple */
+  font-family: "Merriweather", sans-serif;
+  font-size: 22px;
+  padding: 15px;
+}
+
+.jack_profile_table td {
+  color: #4b0082; /* Indigo */
+  background-color: #e6e6fa; /* Lavender */
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fade-in Effect for Table Rows */
+.jack_profile_table tr {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.jack_profile_table tr:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.jack_profile_table tr:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Centered Email Button with Warm Color and Hover Glow */
+.jack_email_button {
+  font-family: Poppins, sans-serif;
+  display: inline-block;
+  margin: 20px auto;
+  background-color: #6a1b9a; /* Dark purple */
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
+}
+
+.jack_email_button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px 4px rgba(106, 27, 154, 0.5); /* Lighter purple shadow */
+}
+
+.ny_profile_body {
+  background: url('./images/kyoto.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.ny_profile_container {
+  margin: 50px auto;
+  display: block;
+  width: 80%;
+  background-image: repeating-linear-gradient(
+      145deg,
+      #f4e8c1 0%,  /* Soft light yellow */
+      #ffffff 25%, /* White */
+      #f0c27b 50%, /* Medium warm yellow */
+      #ffffff 75%, /* White */
+      #e89742 100% /* Darker orange */
+  );
+  background-size: 400% 400%;
+  animation: waveAnimation 15s linear infinite;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* Diagonal Wave Gradient Animation Keyframes */
+@keyframes waveAnimation {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
+
+/* Adjust text color to maintain readability */
+.ny_profile_name, .ny_profile_id, .ny_profile_description {
+  color: #b45f06; /* Dark brown-orange for text */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow for readability */
+}
+
+/* Profile Image with Center Alignment and Hover Animation */
+#ny_profile_img {
+  margin: 30px auto;
+  display: block;
+  width: 200px;  /* Adjust to your preference */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular shape */
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+#ny_profile_img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Profile Text Styling with Warm Color */
+.ny_profile_name, .ny_profile_id, .ny_profile_description {
+  color: #a0522d; /* Saddle brown */
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0;
+}
+
+/* Profile Table Container Centered */
+.ny_profile_table_container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Table Styling with Reduced Brightness */
+.ny_profile_table {
+  margin: auto;
+  border-spacing: 0;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 3px solid #d2691e; /* Dark orange Border */
+  animation: glowBorder 1.5s infinite alternate; /* Constant glowing effect */
+}
+
+/* Glowing Border Keyframes */
+@keyframes glowBorder {
+  from {
+      box-shadow: 0 0 10px #ff7518, 0 0 20px #ff7518, 0 0 20px #ff7518;
+  }
+  to {
+      box-shadow: 0 0 20px #ffa07a, 0 0 40px #ffa07a, 0 0 30px #ffa07a;
+  }
+}
+
+/* Table Header and Cell Styling */
+.ny_profile_table th {
+  color: white;
+  background-color: #ff7518;
+  font-family: "Merriweather", sans-serif;
+  font-size: 22px;
+  padding: 15px;
+}
+
+.ny_profile_table td {
+  color: #8b4513; /* Saddle brown */
+  background-color: #f5deb3; /* Lighter wheat color for the table background */
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fade-in Effect for Table Rows */
+.ny_profile_table tr {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.ny_profile_table tr:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.ny_profile_table tr:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Centered Email Button with Warm Color and Hover Glow */
+.ny_email_button {
+  font-family: Poppins, sans-serif;
+  display: inline-block;
+  margin: 20px auto;
+  background-color: #b45f06;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
+}
+
+.ny_email_button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px 4px rgba(180, 95, 6, 0.5);
+}
+
+#elijah_profile_body {
+  background: url('./images/banner.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.elijah_profile_container {
+  margin: 50px auto;
+  display: block;
+  width: 80%;
+  background-image: repeating-linear-gradient(
+      145deg,
+      #d1fbd8 0%,  
+      #ffffff 25%, 
+      #a3ee5b 50%, 
+      #ffffff 75%, 
+      #d1fbd8 100% 
+  );
+  background-size: 400% 400%;
+  animation: waveAnimation 15s linear infinite;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+/* Diagonal Wave Gradient Animation Keyframes */
+@keyframes waveAnimation {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
+
+/* Adjust text color to maintain readability */
+.elijah_profile_name, .elijah_profile_id, .elijah_profile_description {
+  color: #66d855; 
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow for readability */
+}
+
+/* Profile Image with Center Alignment and Hover Animation */
+#elijah_profile_img {
+  margin: 30px auto;
+  display: block;
+  width: 200px;  /* Adjust to your preference */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular shape */
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+#elijah_profile_img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.elijah_profile_name, .elijah_profile_id, .elijah_profile_description {
+  color: #40ba0f; 
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0;
+}
+
+/* Profile Table Container Centered */
+.elijah_profile_table_container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Table Styling with Reduced Brightness */
+.elijah_profile_table {
+  margin: auto;
+  border-spacing: 0;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 3px solid #188300;
+  animation: elijahGlowBorder 1.5s infinite alternate; /* Constant glowing effect */
+}
+
+/* Glowing Border Keyframes */
+@keyframes elijahGlowBorder {
+  from {
+      box-shadow: 0 0 10px #d1fbd8, 0 0 20px #d1fbd8, 0 0 20px #d1fbd8;
+  }
+  to {
+      box-shadow: 0 0 20px #66d855, 0 0 40px #66d855, 0 0 30px #66d855;
+  }
+}
+
+/* Table Header and Cell Styling with Less Brightness */
+.elijah_profile_table th {
+  color: white;
+  background-color: #66d855;
+  font-family: "Merriweather", sans-serif;
+  font-size: 22px;
+  padding: 15px;
+}
+
+.elijah_profile_table td {
+  color: #006d6d; /* Teal Text */
+  background-color: #a3ee5b; /* Softer color for the table background */
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fade-in Effect for Table Rows */
+.elijah_profile_table tr {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.elijah_profile_table tr:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.elijah_profile_table tr:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Centered Email Button with Teal Color and Hover Glow */
+.elijah_email_button {
+  font-family: Poppins, sans-serif;
+  display: inline-block;
+  margin: 20px auto;  
+  background-color: #40ba0f;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
+}
+
+.elijah_email_button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px 4px rgba(0, 109, 109, 0.5);
+}
+
+/* Acknowledgement Page Styles */
+#acknowledgement_body {
+  background: url('./images/215595.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.acknowledgement-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(240, 234, 214, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.acknowledgement-content h1 {
+  color: #3B5E3A;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.acknowledgement-content h2 {
+  color: #4A3C31;
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.acknowledgement-content p {
+  color: #4A3C31;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.acknowledgement-content ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.acknowledgement-content li {
+  color: #4A3C31;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .acknowledgement-content {
+      padding: 15px;
+  }
+
+  .acknowledgement-content h1 {
+      font-size: 2rem;
+  }
+
+  .acknowledgement-content h2 {
+      font-size: 1.5rem;
+  }
+
+  .acknowledgement-content p,
+  .acknowledgement-content li {
+      font-size: 1rem;
+  }
 }
 
 
