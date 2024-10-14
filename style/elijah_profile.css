@@ -1,5 +1,5 @@
 body {
-    background: url('./images/juani_bg.jpg') no-repeat center center fixed;
+    background: url('./images/banner.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -9,11 +9,11 @@ body {
     width: 80%;
     background-image: repeating-linear-gradient(
         145deg,
-        #c5f0f0 0%,  /* Slightly darker light teal */
-        #ffffff 25%, /* White */
-        #99e6e6 50%, /* Slightly darker medium teal */
-        #ffffff 75%, /* White */
-        #c5f0f0 100% /* Slightly darker light teal */
+        #d1fbd8 0%,  
+        #ffffff 25%, 
+        #a3ee5b 50%, 
+        #ffffff 75%, 
+        #d1fbd8 100% 
     );
     background-size: 400% 400%;
     animation: waveAnimation 15s linear infinite;
@@ -34,27 +34,10 @@ body {
     }
 }
 
-.profile_id {
-    font-family: 'Arial', 'sans-serif';
-    color: #006d6d;
-    font-size: 25px;
-}
-
-.profile_name {
-    font-size: 200%;
-    font-family: 'Poppins', 'sans-serif';
-    color: #006d6d;
-    font-weight: bold;
-}
-
-/* Profile Text Styling with Teal Color */
-.profile_description {
-    color: rgb(0, 109, 109); /* Teal */
-    font-weight: 600;
-    font-size: 25px;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    margin: 10px;
+/* Adjust text color to maintain readability */
+.profile_name, .profile_id, .profile_description {
+    color: #66d855; 
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow for readability */
 }
 
 /* Profile Image with Center Alignment and Hover Animation */
@@ -67,15 +50,20 @@ body {
     transition: transform 0.3s ease;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    border: 20px groove #006d6d;
-    padding: 20px;
 }
 
 #profile_img:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-
+.profile_name, .profile_id, .profile_description {
+    color: #40ba0f; 
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
+}
 
 /* Profile Table Container Centered */
 .profile_table_container {
@@ -90,24 +78,24 @@ body {
     width: 70%;
     overflow: hidden;
     border-radius: 12px;
-    border: 3px solid #009999; /* Teal Border */
+    border: 3px solid #188300;
     animation: glowBorder 1.5s infinite alternate; /* Constant glowing effect */
 }
 
 /* Glowing Border Keyframes */
 @keyframes glowBorder {
     from {
-        box-shadow: 0 0 10px #009999, 0 0 20px #009999, 0 0 20px #009999;
+        box-shadow: 0 0 10px #d1fbd8, 0 0 20px #d1fbd8, 0 0 20px #d1fbd8;
     }
     to {
-        box-shadow: 0 0 20px #00cccc, 0 0 40px #00cccc, 0 0 30px #00cccc;
+        box-shadow: 0 0 20px #66d855, 0 0 40px #66d855, 0 0 30px #66d855;
     }
 }
 
 /* Table Header and Cell Styling with Less Brightness */
 th {
     color: white;
-    background-color: #009999;
+    background-color: #66d855;
     font-family: "Merriweather", sans-serif;
     font-size: 22px;
     padding: 15px;
@@ -115,22 +103,11 @@ th {
 
 td {
     color: #006d6d; /* Teal Text */
-    background-color: #d4edeb; /* Softer color for the table background */
+    background-color: #a3ee5b; /* Softer color for the table background */
     padding: 20px;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
 }
-
-td ul li {
-    text-align: left;
-    color: #006d6d;
-    margin-left: 1.5%;
-}
-
-#hobby {
-    text-align: left;
-}
-
 
 /* Fade-in Effect for Table Rows */
 .profile_table tr {
@@ -156,7 +133,7 @@ td ul li {
     font-family: Poppins, sans-serif;
     display: inline-block;
     margin: 20px auto;
-    background-color: #006d6d;
+    background-color: #40ba0f;
     border-radius: 8px;
     padding: 0.8rem 1.2rem;
     color: #fff;

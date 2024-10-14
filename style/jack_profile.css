@@ -1,5 +1,5 @@
 body {
-    background: url('./images/juani_bg.jpg') no-repeat center center fixed;
+    background: url('./images/215595.gif') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -9,12 +9,13 @@ body {
     width: 80%;
     background-image: repeating-linear-gradient(
         145deg,
-        #c5f0f0 0%,  /* Slightly darker light teal */
-        #ffffff 25%, /* White */
-        #99e6e6 50%, /* Slightly darker medium teal */
-        #ffffff 75%, /* White */
-        #c5f0f0 100% /* Slightly darker light teal */
+        #e1bee7 0%,   /* Light Purple */
+        #ba68c8 25%,  /* Medium Purple */
+        #8e44ad 50%,  /* Standard Purple */
+        #ba68c8 75%,  /* Medium Purple */
+        #e1bee7 100%  /* Light Purple */
     );
+    
     background-size: 400% 400%;
     animation: waveAnimation 15s linear infinite;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -34,27 +35,10 @@ body {
     }
 }
 
-.profile_id {
-    font-family: 'Arial', 'sans-serif';
-    color: #006d6d;
-    font-size: 25px;
-}
-
-.profile_name {
-    font-size: 200%;
-    font-family: 'Poppins', 'sans-serif';
-    color: #006d6d;
-    font-weight: bold;
-}
-
-/* Profile Text Styling with Teal Color */
-.profile_description {
-    color: rgb(0, 109, 109); /* Teal */
-    font-weight: 600;
-    font-size: 25px;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    margin: 10px;
+/* Adjust text color to maintain readability */
+.profile_name, .profile_id, .profile_description {
+    color: #9b59b6;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow for readability */
 }
 
 /* Profile Image with Center Alignment and Hover Animation */
@@ -63,19 +47,25 @@ body {
     display: block;
     width: 200px;  /* Adjust to your preference */
     height: auto;  /* Maintain aspect ratio */
-    border-radius: 50%; /* Circular shape */
+    border-radius: 40%; /* Circular shape */
     transition: transform 0.3s ease;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    border: 20px groove #006d6d;
-    padding: 20px;
 }
 
 #profile_img:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-
+/* Profile Text Styling with Warm Color */
+.profile_name, .profile_id, .profile_description {
+    color: #4b0082; /* Saddle brown */
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
+}
 
 /* Profile Table Container Centered */
 .profile_table_container {
@@ -90,47 +80,36 @@ body {
     width: 70%;
     overflow: hidden;
     border-radius: 12px;
-    border: 3px solid #009999; /* Teal Border */
+    border: 3px solid #4b0082; /* Dark orange Border */
     animation: glowBorder 1.5s infinite alternate; /* Constant glowing effect */
 }
 
 /* Glowing Border Keyframes */
 @keyframes glowBorder {
     from {
-        box-shadow: 0 0 10px #009999, 0 0 20px #009999, 0 0 20px #009999;
+        box-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6, 0 0 20px #9b59b6; /* Lighter Purple */
     }
     to {
-        box-shadow: 0 0 20px #00cccc, 0 0 40px #00cccc, 0 0 30px #00cccc;
+        box-shadow: 0 0 20px #8e44ad, 0 0 40px #8e44ad, 0 0 30px #8e44ad; /* Deeper Purple */
     }
 }
 
-/* Table Header and Cell Styling with Less Brightness */
+/* Table Header and Cell Styling */
 th {
     color: white;
-    background-color: #009999;
+    background-color: #8e44ad; /* Dark purple */
     font-family: "Merriweather", sans-serif;
     font-size: 22px;
     padding: 15px;
 }
 
 td {
-    color: #006d6d; /* Teal Text */
-    background-color: #d4edeb; /* Softer color for the table background */
+    color: #4b0082; /* Indigo */
+    background-color: #e6e6fa; /* Lavender */
     padding: 20px;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
 }
-
-td ul li {
-    text-align: left;
-    color: #006d6d;
-    margin-left: 1.5%;
-}
-
-#hobby {
-    text-align: left;
-}
-
 
 /* Fade-in Effect for Table Rows */
 .profile_table tr {
@@ -151,12 +130,12 @@ td ul li {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Centered Email Button with Teal Color and Hover Glow */
+/* Centered Email Button with Warm Color and Hover Glow */
 .email_button {
     font-family: Poppins, sans-serif;
     display: inline-block;
     margin: 20px auto;
-    background-color: #006d6d;
+    background-color: #6a1b9a; /* Dark purple */
     border-radius: 8px;
     padding: 0.8rem 1.2rem;
     color: #fff;
@@ -168,5 +147,5 @@ td ul li {
 
 .email_button:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 8px 4px rgba(0, 109, 109, 0.5);
+    box-shadow: 0 0 8px 4px rgba(106, 27, 154, 0.5); /* Lighter purple shadow */
 }

@@ -5,7 +5,7 @@
         <title>Enhancements</title>
         <meta name="author" content="Ivan Liang Jin Ngu">
         <meta name="keywords" content="Enhancements, Herbarium">
-        <meta name="description" content="Webpage about the enhancements used in our website.">
+        <meta name="description" content="Webpage about the enhancements used in Herbaria website.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style/style.css">
         <link rel="icon" href="./images/logo.png">
@@ -14,7 +14,7 @@
     <body>
         <header>
             <div class="logo">
-                <a href="index.html"><img src="./style/images/logo.png" alt="Logo"></a>
+                <a href="index.html"><img src="./images/logo.png" alt="Logo"></a>
             </div>
             <label class="menu-icon" for="menu-toggle">&#9776;</label>
             <nav class="navbar">
@@ -45,7 +45,7 @@
         </div>
         <div class="content_con">
             <section class="class_border">
-                <h2 id="family">Lift effects when hover</h2>
+                <h2>Lift effects when hover</h2>
             </section>
             <div class="class_def">
                 <div class="box_container">
@@ -67,9 +67,8 @@
                 <div class="box_container">
                     <div class="zoom_box">
                         <div class="mbox_front">
-                            <img src="./style/images/shorea_faguetiana.jpg" class="front_img" alt="shorea_faguetiana">
+                            <img src="./images/shorea_faguetiana.jpg" class="front_img" alt="shorea_faguetiana">
                         </div>
-                        <div><br></div><div><br></div><div><br></div>
                         <div class="zoom_box_content">
                             <h3>Dipterocarpaceae</h3>
                             <button class="button" onclick="location.href = './classify.html#dipterocarpaceae'">Learn More</button>
@@ -88,7 +87,7 @@
             <div class="class_def">
               <div class="genus_box">
                 <div class="class_textarea">
-                    <p>By using the effect we can create a sliding panel intra-action that appears when hovered over by positioning it off-screen to the right (right: -30vw) and moving it into view (right: 0) using CSS transitions. The panel rarely visible and moved out of view by default (inactive) through the setting creating a smooth sliding effect in the user experience. The transform: translateY(-50%) ensures that the panel is always directly at the middle vertically. Also, transition: right 0.3s ease-out;, once activated, simply controls the sliding speed. This feature draws inspiration from <a href="https://speckyboy.com/vertical-slide-menu-css-transitions/">Speckyboy</a>, and is used in <a href="./classify.html#genus">genus under classify page.</a></p>
+                    <p>By using the effect we can create a sliding panel intra-action that appears when hovered over by positioning it off-screen to the right (right: -30vw) and moving it into view (right: 0) using CSS transitions. The panel rarely visible and moved out of view by default (inactive) through the setting creating a smooth sliding effect in the user experience. The transform: translateY(-50%) ensures that the panel is always directly at the middle vertically. Also, transition: right 0.3s ease-out;, once activated, simply controls the sliding speed. This feature draws inspiration from <a href="https://speckyboy.com/vertical-slide-menu-css-transitions/">Speckyboy</a>, and is used in <a href="./classify.html#genus">genus under classify page.</a> For users on mobile, this feature is unfortunately not displayed due to coding limitations.</p>
                 </div>
               </div>
               <aside class="slide_panel">
@@ -105,7 +104,7 @@
             </section>
             <div class="class_classification">
                 <div class="fade_container">
-                    <img src="./style/images/shorea_faguetiana.jpg" alt="shorea_faguetiana" class="fade_image">
+                    <img src="./images/shorea_faguetiana.jpg" alt="shorea_faguetiana" class="fade_image">
                     <div class="fade_overlay">
                       <div class="fade_text"><a href="https://en.wikipedia.org/wiki/Shorea_faguetiana">Shorea Faguetiana</a></div>
                     </div>
@@ -122,6 +121,68 @@
             <div class="class_def">
                 <p>The upload_divider class utilizes pseudo-elements to create decorative floating leaf emojis (🍃) on both the top left and bottom right corners. These emojis are animated to create a gentle floating effect using keyframe animations. The ::before pseudo-element floats the emoji to the left, while the ::after pseudo-element floats the emoji to the right, each with distinct animations. The animations involve translating and rotating the emojis to simulate a natural floating motion, enhancing the visual appeal of the divider. This animation is made using <a href="https://www.w3schools.com/css/css3_animations.asp">W3Schools' documentation</a> on animations. This is only used in one header in <a href="identify.html#identify_form">identify webpage.</a></p>
             </div>
+        </div>
+        <div class="content_con">
+            <form action="/upload" method="post" enctype="multipart/form-data" class="upload_form" onsubmit="return false;">
+                <!-- Hidden checkbox to trigger the reveal -->
+                <label for="toggle" class="upload_button" title="Click here for example result.">
+                    <span class="button_text">Click Me</span>
+                </label>
+            </form>
+        </div>
+        <input type="checkbox" id="toggle">
+        <!-- Content to be revealed -->
+        <div class="hide_content">
+            <div class="identify_class_def">
+                <h2 class="title">Hidden content</h2>
+                <div class="content-wrapper">
+                    <div class="identify_textarea">
+                        By using toggle for checked and clever display:none css element, we are able to make items reveal itself when the button is clicked. The button also features an animation of leaves floating in when hover using keyframes. This is used under <a href="./identify.html#identify_form">upload in identify</a>, to only show the results of the flower when button is clicked.
+                    </div>
+                </div>
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="close_button" title="Click here to close.">
+                   <img src="./images/close.png" alt="close logo">
+                </label>
+            </div>
+        </div>
+        <div class="content_con">
+            <section class="tool_border" id="enhancement_section1">
+                <h2>Moving text box when hover and image enlargement when hover</h2>
+            </section>
+            
+            <div class="tools_def">
+                <div class="tools_section2">
+                    <p>For the text area, it utilizes transform: translateX(10px); to move it towards X when hover. While the image utilizes transform: scale(1.05); to make it increase in scale when hover. These can be found through W3School website. <a href="https://www.w3schools.com/cssref/css3_pr_transform.php">Transform </a>and <a href="https://www.w3schools.com/cssref/css_pr_translate.php">Translate</a>. This part is used in <a href="./tools.html">Tools section.</a></p>
+                </div>
+                <figure class="tools_figure">
+                    <img class="tools_figure_img" src="./images/glue.jpg" alt="glue">
+                </figure>
+            </div>
+        </div>
+        <div class="content_con">
+            <section class="tool_border">
+                <h2>Flip Cards</h2>
+            </section>
+            <div class="tools_def">
+                <div class="tools_section">
+                    <div class="flip_box_container">
+                        <div class="class_flip">
+                            <div class="class_flip_inner">
+                              <div class="class_flip_front">
+                                <div class="content">
+                                    <img src="./images/bag.jpg" alt="bag">
+                                    <p>Flip Cards</p>
+                                </div>
+                            </div>
+                            <div class="class_flip_back">
+                                <p>Flip cards are used to display certain tools under the page <a href="tools.html">Tools.</a> This feature is from <a href="https://www.w3schools.com/howto/howto_css_flip_card.asp">W3School</a> but with our own twists.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
         </div>
         <footer>
             <section class="ft-main">
@@ -172,7 +233,7 @@
         </footer>
         <a href="#top" class="top_button">
             <figure>
-                <img src="./style/images/leaf.png" alt="Leaf" class="leaf_image">
+                <img src="./images/leaf.png" alt="Leaf" class="leaf_image">
                 <figcaption class="text">Back to Top</figcaption>
             </figure>
         </a>
