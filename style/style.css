@@ -3,16 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html{
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-font-family: 'Poppins', sans-serif;
-line-height: 1.6;
-font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
 }
 
 h1, h2, h3 {
@@ -23,7 +24,7 @@ color: #ffffff;
 }
 
 h1 {
-font-size: 2.6rem; /* Responsive heading size */
+font-size: 2.3rem; /* Responsive heading size */
 font-weight: bold;
 }
 
@@ -44,7 +45,8 @@ font-size: 1rem;
 }
 
 .logo img {
-  width: 10%;;
+  width: 100px;
+  height: auto;
   padding-top: 10px;
 }
 
@@ -164,7 +166,7 @@ width: 30px;
 background-color: #2b4b2f;
 text-align: center;
 height: 80px;
-padding-top: 5px;
+padding-top: 10px;
 }
 
 .class_border {
@@ -238,6 +240,18 @@ background-image: url('./images/South-East-Asia-scaled.jpg');
 
 #identify_hero {
 background-image: url('./images/identify_bg.gif');
+}
+
+#care_hero {
+  background-image: url('./images/care_bg.jpg');
+}
+
+#tools_hero {
+  background-image: url('./images/tools_bg.jpg');
+}
+
+#tutorial_hero {
+  background-image: url('./images/tutorial_bg.jpg');
 }
 
 .product-categories {
@@ -859,6 +873,8 @@ display: block;
 }
 
 .tools_item h3 {
+  width: 50%;
+  margin-left: 33%;
   color: black;
   margin-top: 0;
 }
@@ -867,7 +883,7 @@ display: block;
   color: black;
   float: left; 
   width: 80%; 
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .tools_item_img{
@@ -899,7 +915,7 @@ display: block;
 
 .tools_item3 h3 {
   margin-top: 0;
-  width: 80%;
+  width: 78%;
   color: #000000;
 }
 
@@ -976,18 +992,15 @@ display: block;
 }
 
 .tools_list_item {
-  margin-bottom: 0.5rem;
-  padding-left: 1.5rem;
   position: relative;
   color: #000000;
 }
 
 .tools_list_item::before {
   content: '•';
-  font-size: 1.5em;
-  position: absolute;
-  left: 0;
-  top: -0.2rem;
+  display: inline-block; 
+  vertical-align: middle; 
+  margin-right: 0.5rem; 
 }
 
 .tools_figure {
@@ -1094,11 +1107,11 @@ display: block;
   max-height: 350px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 .tools_img_2:hover{
   transform: scale(1.05);
-  transition: transform 0.3s ease;
 }
 
 .tools_figure_img{
@@ -1109,11 +1122,11 @@ display: block;
   max-width: 350px;
   max-height: 350px;
   margin-right: 20px;
+  transition: transform 0.3s ease;
 }
 
 .tools_figure_img:hover{
   transform: scale(1.05);
-  transition: transform 0.3s ease;
 }
 
 .tools_cap_2{
@@ -1148,18 +1161,92 @@ display: block;
 
 
 /* Care start */
+.care_figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15%;
+}
+
 .care_img{
 width: 300px;
 height: 300px;
-margin-left: 50px;
+margin-right: 10%;
+float: right;
 }
 
 .care_cap{
 color: black;
 text-align: center;
-margin-left: 5%;
+margin-right: 10%;
 width: 100%;
 }
+
+.care_img2 {
+  width: 300px;
+  height: 300px;
+  margin-right: 10%;
+}
+
+.care_cap2 {
+  color: black;
+  text-align: center;
+  margin-right: 10%;
+  width: 100%;
+}
+
+.care_textarea p{
+  color: #4A3C31;
+  }
+  
+  .care_textarea dl {
+  margin: 0;
+  padding: 0;
+  }
+  
+  .care_textarea dt {
+  font-weight: bold;
+  margin-top: 10px; /* Adds space above each term */
+  color: #4A3C31;
+  }
+  
+  .care_textarea dd {
+  margin-left: 20px; /* Indents definition */
+  margin-bottom: 10px; /* Adds space between definitions */
+  color: #4A3C31;
+  }
+  
+  .care_textarea ol{
+  padding-left: 20px;
+  list-style-type: lower-roman;
+  }
+  
+  .care_textarea {
+  flex: 1;
+  border-style: solid;
+  border-color: #3B5E3A;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  }
+  
+  .care_textarea ul li{
+  color: #4A3C31;
+  margin-left: 30px;
+  }
+  
+  .care_textarea dl {
+    margin-top: 20px;
+  }
+  
+  .care_textarea dt {
+    font-size: 18px;
+  }
+  
+  .care_textarea dd {
+    font-size: 16px;
+  }
 /* Care end*/
 
 .identify_aside {
@@ -1241,14 +1328,13 @@ gap: 10px;
 margin: 20px 0;
 }
 
-#morning_flower1 {
-width: 14%; /* Adjust as needed */
-}
+
 
 #morning_flower1,
 #morning_flower2,
 #morning_flower3 {
 object-fit: cover;
+width: 15%;
 }
 
 .identify_textarea {
@@ -1277,11 +1363,14 @@ padding: 20px;
 color: black;
 }
 
-.close_button img{
-  width:  3.5%;
+.close_button {
   cursor: pointer;
-  position: relative;
-  right: -1600px;
+  width: 4%;
+  float: right;
+}
+
+.close_button img{
+  width:  95%;
 }
 
 footer ul {
@@ -2261,7 +2350,7 @@ border-radius: 15px 50px;
 background-color: #3B5E3A;
 color: white;
 transform: rotateY(180deg);
-border-radius: 15px 50px;
+border-radius: 15px 15px 50px 15px;
 padding: 20px;
 }
 
@@ -2303,7 +2392,6 @@ transform: translateY(-5px);
 
 
 /* navbar media */
-/* Small screens (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .menu-icon {
       display: block; /* Show menu icon on smaller screens */
@@ -2408,28 +2496,33 @@ transform: translateY(-5px);
 }
 
 
-/* Main page */
-@media (max-width: 700px) {
+/* Index.html */
+@media (max-width: 768px) {
   .main_box {
-      width: 350px;
-      height: 300px;
+      height: 100%;
+      width: 100%;
+      padding: 10px;
   }
 
   .box_content p {
-      font-size: 12px;
+      font-size: 1.0rem;
   }
 
   .box_content h3 {
-      font-size: 15px;
+      font-size: 1.3rem;
   }
 
-  .box_content .button {
+   .button {
       width: 200px;
-      font-size: 15px;
       height: 45px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+      padding-top: 8px;
+  }
+
+  .box_content {
+    padding: 10px;
   }
 
   .box_container .main_box:hover .mbox_front {
@@ -2441,104 +2534,19 @@ transform: translateY(-5px);
     display: none;
   }
 
-  .border, h2{
-    font-size: 1.2rem;
-  }
-}
-
-/* Responsive adjustments for forms */
-/* contribute page */
-@media screen and (max-width: 768px) {
-  .contribute-content {
-    padding: 10px;
+  .border {
+    height: 15%;
   }
 
-  .contribute-intro h1 {
-    font-size: 28px;
+  h2{
+    font-size: 2.0rem;
   }
 
-  .contribute-intro p {
-    font-size: 16px;
-  }
-
-  .contribute-form-container {
-    padding: 20px;
-  }
-
-  .contribute-form-container h2 {
-    font-size: 24px;
-  }
-
-  .form-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .form-group {
+  .product-categories {
     width: 100%;
   }
 
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    font-size: 16px;
-    padding: 8px;
-  }
 
-  .radio-group {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .radio-group label {
-    margin-left: 5px;
-  }
-
-  .upload-instructions {
-    font-size: 14px;
-  }
-
-  .submit-button {
-    width: 100%;
-    font-size: 18px;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contribute-intro h1 {
-    font-size: 24px;
-  }
-
-  .contribute-intro p {
-    font-size: 14px;
-  }
-
-  .contribute-form-container h2 {
-    font-size: 20px;
-  }
-
-  .form-group label,
-  .form-group p {
-    font-size: 14px;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    font-size: 14px;
-    padding: 6px;
-  }
-
-  .upload-instructions {
-    font-size: 12px;
-  }
-
-  .submit-button {
-    font-size: 16px;
-  }
-}
 /* Enquiry page */
 @media (max-width: 768px) {
   .enquiry-container {
@@ -2557,21 +2565,58 @@ transform: translateY(-5px);
 
 /* Classify */
 @media screen and (max-width: 768px) {
-  .class_classification {
+  .class_classification,
+  .class_def {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto; /* Centers the content */
   }
 
-  .class_classification img {
+  /* Ensure the image is displayed at the top */
+  .def_image_taxonomy,
+  .def_image_genus,
+  .def_image_species {
+    order: 1;
     width: 100%;
     max-width: 300px;
-    height: auto;
-    margin-bottom: 20px;
-    display: block; /* Show the image directly */
+    margin: 0 auto 20px auto; /* Centers and adds space below */
   }
 
-  .class_textarea {
+  .fade_container {
+    order: 1;
     width: 100%;
+    max-width: 300px;
+    
+  }
+
+  .def_image_taxonomy img,
+  .def_image_genus img,
+  .def_image_species img,
+  .fade_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .def_image_taxonomy figcaption,
+  .def_image_genus figcaption,
+  .def_image_species figcaption{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Text content under the image */
+  .family_box,
+  .genus_box,
+  .species_box,
+  .class_textarea {
+    order: 2;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; /* Centers and adds space */
   }
 
   .class_textarea dl {
@@ -2587,14 +2632,622 @@ transform: translateY(-5px);
   }
 
   .class_border h2 {
-    font-size: 24px;
+    font-size: 26px; /* Increased slightly */
+    margin: 20px 0;  /* Adds space around h2 */
+    text-align: center; /* Centers the heading */
+  }
+
+
+  .slide_panel{
+    display: none;
+  }
+}
+
+/* identify.html */
+@media screen and (max-width: 768px) {
+  #identify_body .divider,
+  #identify_body .class_border {
+      height: auto;
+      min-height: 80px;
+      padding: 15px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .divider h1,
+  .class_border h2 {
+      font-size: 24px;
+      margin: 0;
+      word-wrap: break-word;
+      hyphens: auto;
+  }
+
+  .divider h1 {
+    font-size: 2.2rem;
+  }
+
+  .class_border h2 {
+    font-size: 2.0rem;
+  }
+  
+
+  #identify_body .class_def {
+      flex-direction: column;
+  }
+
+  #identify_body .family_box,
+  #identify_body .def_image_leaf {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  #identify_body .def_image_leaf {
+      order: -1;
+      margin-bottom: 20px;
+  }
+
+  .def_image_leaf img , .def_image_tools img{
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #identify_body .identify_aside {
+      width: 100%;
+      float: none;
+      margin-top: 20px;
+  }
+
+  #identify_body .class_textarea {
+      width: 100%;
+  }
+
+  #identify_body .identify_figure {
+      flex-wrap: wrap;
+  }
+
+  #identify_body #morning_flower1,
+  #identify_body #morning_flower2,
+  #identify_body #morning_flower3 {
+      width: 35%;
+      margin: 5px;
+  }
+
+  #identify_body .identify_textarea {
+      width: 100%;
+  }
+
+  #identify_body .identify_table {
+      width: 100%;
+  }
+
+  #identify_body .identify_table th,
+  #identify_body .identify_table td {
+      padding: 10px;
+      font-size: 1.0rem;
+  }
+
+
+  .title {
+    font-size: 2.0rem;
+  }
+
+  .close_button {
+    padding-top: 10px;
+    cursor: pointer;
+    width: 15%;
+    float: right;
+  }
+  
+  .close_button img{
+    width:  95%;
+  }
+}
+  
+
+@media screen and (max-width: 480px) {
+  .divider h1 {
+    font-size: 2.3rem;
+  }
+
+  .class_border h2 {
+    font-size: 2.0rem;
+  }
+
+  #identify_body #morning_flower1,
+  #identify_body #morning_flower2,
+  #identify_body #morning_flower3 {
+    width: 35%;
+    margin: 5px 0;
+  }
+
+  #identify_body .identify_table th,
+  #identify_body .identify_table td {
+      padding: 20px;
+      font-size: 1.0rem;
+  }
+}
+
+/* contribute.html */
+
+@media screen and (max-width: 768px) {
+  .contribute-content {
+      padding: 10px;
+  }
+
+  .contribute-intro h1 {
+      font-size: 2rem;
+  }
+
+  .contribute-intro p {
+      font-size: 1rem;
+  }
+
+  .contribute-form-container {
+      padding: 20px;
+  }
+
+  .form-row {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .form-group {
+      width: 100%;
+  }
+
+  .radio-group {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .submit-button {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contribute-intro h1 {
+      font-size: 1.8rem;
+  }
+
+  .contribute-form-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+      font-size: 0.9rem;
+  }
+
+  .upload-instructions {
+      font-size: 0.8rem;
+  }
+
+  .submit-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+}
+
+/* care.html */
+@media screen and (max-width: 768px) {
+  .class_border h2 {
+    font-size: 2rem;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow: hidden;
+    line-height: 1.3;
   }
 
   .class_divider h1 {
-    font-size: 28px;
+    font-size: 2.3rem;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .class_border {
+    padding-top: 2px;
+  }
+
+  .class_divider {
+    height: 20%;
+  }
+
+  .upload_divider h1 {
+    font-size: 1.8rem;
+    padding: 0 60px 0 60px;
+  }
+
+
+  /* Specific adjustment for "The 3 methods for herbarium care" title */
+  .class_border h2#family {
+    font-size: 2rem; 
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .content_con {
+    padding: 20px;
+  }
+
+  .class_def,
+  .tools_def {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fade_overlay {
+    width: 93.5%;
+  }
+
+
+  .care_figure,
+  .tools_figure {
+    order: -1;
+    margin: 0 auto 25px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .care_img,
+  .care_img2,
+  .tools_img,
+  .tools_img_2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
+  }
+
+  .care_cap,
+  .care_cap2,
+  .tools_cap,
+  .tools_cap_2 {
+    margin: 12px 0 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px; 
+  }
+
+  .family_box,
+  .tools_textarea {
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+
+  .care_textarea,
+  .tools_textarea {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .care_textarea h3,
+  .tools_textarea h3 {
+    font-size: 20px; 
+    margin-bottom: 12px;
+  }
+
+  .care_textarea p,
+  .care_textarea ul,
+  .care_textarea li,
+  .tools_textarea p,
+  .tools_textarea ul,
+  .tools_textarea li {
+    font-size: 16px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .class_border h2 {
+    font-size: 2.0rem; 
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .class_divider h1 {
+    font-size: 2.3rem; 
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .class_divider {
+    height: 20%;
+  }
+
+  .class_border h2#family {
+    font-size: 2.0rem;
+    padding-top: 0;
+  }
+
+  .care_textarea h3,
+  .tools_textarea h3 {
+    font-size: 18px; 
+  }
+
+  .care_textarea p,
+  .care_textarea ul,
+  .care_textarea li,
+  .tools_textarea p,
+  .tools_textarea ul,
+  .tools_textarea li {
+    font-size: 15px; 
+  }
+}
+
+/* tools.html */
+@media screen and (max-width: 768px) {
+  .tools_section,
+  .tools_section2,
+  .tools_section3 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tools_item,
+  .tools_item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tools_item_img,
+  .tools_item_img3 {
+    float: none;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tools_item h3,
+  .tools_item3 h3 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .tools_item p,
+  .tools_item3 p {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .tools_def {
+    flex-direction: column;
+  }
+
+  .tools_figure {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .tools_figure_img {
+    float: none;
+    margin: 0 auto 15px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tools_img,
+  .tools_img_2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tools_cap,
+  .tools_cap_2 {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .tools_item2 {
+    margin-left: 0;
+  }
+
+  .flip_box_container {
+    width: 95%;
+  }
+
+  .class_flip {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tools_section h2,
+  .tools_section2 h3,
+  .tools_section3 h2 {
+    font-size: 1.5rem;
+  }
+
+  .tools_item h3,
+  .tools_item3 h3 {
+    font-size: 1.3rem;
+  }
+
+  .tools_item p,
+  .tools_item3 p,
+  .tools_item2 p {
+    font-size: 0.9rem;
+  }
+
+  .class_flip {
+    height: 350px;
   }
 }
 
 
+/* Tutorial.html */
+@media screen and (max-width: 768px) {
+  .tutorial_container {
+    width: 95%;
+  }
 
+  .tutorial_section {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .tutorial_figure,
+  .tutorial_figure_2 {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+    order: -1;
+  }
+
+  .tutorial_figure img,
+  .tutorial_figure_2 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Increase size for describing, storage, and glue images */
+  #tutorial_section_img1 img,
+  .tutorial_section_img4,
+  .tutorial_section_img3 {
+    width: 80%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tutorial_aside {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+    order: 1;
+  }
+
+  #step1_paragraph,
+  #step2_paragraph,
+  #step3_paragraph,
+  #step4_contents {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .tutorial_dl {
+    width: 100%;
+  }
+
+  /* Fix for leaking Step 2 title */
+  .tutorial_border {
+    height: auto;
+    min-height: 80px;
+    padding: 15px 10px;
+  }
+
+  .tutorial_border h2 {
+    font-size: 1.8rem;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .tutorial_h3 {
+    font-size: 1.6rem;
+  }
+
+  .tutorial_section p,
+  .tutorial_li,
+  .tutorial_li_tips,
+  .tutorial_dt,
+  .tutorial_dd {
+    font-size: 1.2rem;
+  }
+
+  .tutorial_aside h3 {
+    font-size: 1.5rem;
+  }
+
+  .tutorial_aside ul li {
+    font-size: 1.2rem;
+  }
+
+  .tutorial_table {
+    font-size: 1.1rem;
+  }
+
+  .tutorial_table th,
+  .tutorial_table td {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tutorial_border h2 {
+    font-size: 1.5rem;
+  }
+
+  .tutorial_h3 {
+    font-size: 1.4rem;
+  }
+
+  .tutorial_section p,
+  .tutorial_li,
+  .tutorial_li_tips,
+  .tutorial_dt,
+  .tutorial_dd {
+    font-size: 1.1rem;
+  }
+
+  .tutorial_aside h3 {
+    font-size: 1.3rem;
+  }
+
+  .tutorial_aside ul li {
+    font-size: 1.1rem;
+  }
+
+  .tutorial_table {
+    font-size: 1rem;
+  }
+
+  .tutorial_table th,
+  .tutorial_table td {
+    padding: 8px;
+  }
+
+  .tutorial_figure img,
+  .tutorial_figure_2 img {
+    max-width: 100%;
+  }
+
+  /* Further increase size for describing, storage, and glue images on very small screens */
+  #tutorial_section_img1 img,
+  .tutorial_section_img4,
+  .tutorial_section_img3 {
+    width: 95%;
+  }
+}
