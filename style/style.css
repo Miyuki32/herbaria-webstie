@@ -2716,9 +2716,27 @@ transform: translateY(-5px);
 }
 
 /* Adjust text color to maintain readability */
-.ny_profile_name, .ny_profile_id, .ny_profile_description {
-  color: #b45f06; /* Dark brown-orange for text */
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow for readability */
+.ny_profile_id {
+  font-family: 'Arial', 'sans-serif';
+  color: #b45f06;
+  font-size: 25px;
+}
+
+.ny_profile_name {
+  font-size: 200%;
+  font-family: 'Poppins', 'sans-serif';
+  color: #b45f06;
+  font-weight: bold;
+}
+
+/* Profile Text Styling with Teal Color */
+.ny_profile_description {
+  color: rgba(180, 95, 6, 1);
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
 }
 
 /* Profile Image with Center Alignment and Hover Animation */
@@ -2731,21 +2749,14 @@ transform: translateY(-5px);
   transition: transform 0.3s ease;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   object-fit: cover; /* Ensures the image covers the area without distortion */
+  border: 20px groove #b45f06;
+  padding: 20px;
 }
 
 #ny_profile_img:hover {
   transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
-/* Profile Text Styling with Warm Color */
-.ny_profile_name, .ny_profile_id, .ny_profile_description {
-  color: #a0522d; /* Saddle brown */
-  font-weight: 600;
-  font-size: 25px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  margin: 10px 0;
-}
 
 /* Profile Table Container Centered */
 .ny_profile_table_container {
